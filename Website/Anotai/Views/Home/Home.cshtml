@@ -1,0 +1,274 @@
+﻿@model Anotai.Models.Usuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Anotaí - Sua comanda</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="~/Content/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="~/Content/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/creative.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="js-scroll-trigger" href="#page-top"><img src="~/Content/img/Logo_Escrita.fw.png" style="width:116px" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#funcionamento">Como Funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#baixe">Baixe o App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#entrar">Entrar</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:10px">
+                        <a class="btn btn-primary js-scroll-trigger" href="#entrar">Registrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Fica tranquilo, sua comanda tá com a gente!</h1>
+                <hr>
+                <p>Seus gastos estão todos na palma da sua mão, sem papel, sem caneta, sem essa de perder
+                a comanda e pagar um absurdo! Apenas seu celular, inclusive, Anotaí garçom!</p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#funcionamento">Descubra Mais</a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="funcionamento">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading text-white">Controle é o nome!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Você entra no estabelecimento já com sua comanda em mãos (literalmente). 
+                    Nada de atendentes marcando valores errados ou itens a mais na sua comanda. Tenha sempre o 
+                    controle de seus pedidos! Descrição e imagem, valor unitário e total em um aplicativo.</p>
+                    <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">E o que mais?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Ao seu dispor</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-qrcode text-primary sr-icons"></i>
+                        <hr class="light">
+                        <h3>Comanda Virtual</h3>
+                        <p class="text-muted">Sua comanda está sempre com você. Sem papel. Digital.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <hr class="light">
+                        <h3>Pagamento Rápido</h3>
+                        <p class="text-muted">Cadastre seu cartão de crédito, clique em pagar. É só isso.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-check-square-o text-primary sr-icons"></i>
+                        <hr class="light">
+                        <h3>Valide a comanda</h3>
+                        <p class="text-muted">Cada estabelecimento tem seu jeito de validar! Dê uma olhada
+                        com o garçom, ele é o cara!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <hr class="light">
+                        <h3>App Grátis</h3>
+                        <p class="text-muted">E a melhor parte: o nosso aplicativo é de graça!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="baixe" class="call-to-action bg-dark">
+        <div class="container text-center">
+            <h2>Conheça melhor vendo de dentro!</h2>
+            <a class="btn btn-default btn-xl sr-button" href="http://play.google.com">Baixe o App!</a>
+        </div>
+    </section>
+    <section id="entrar">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 text-center">
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2>Faça login</h2>
+                            <hr>
+                            <br />
+                        </div>
+                    </div>
+                    @using(Html.BeginForm("Entrar", "Acessos")
+                    {
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                <input type="submit" value="Entrar" class="btn btn-light" />
+                            </div>
+                        </div>
+                        <br /><br /><br />
+                    }
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h2 class="section-heading">Seja um investidor!</h2>
+                            <hr>
+                            <br />
+                        </div>
+                    </div>
+                    @using (Html.BeginForm("Cadastrar", "Acessos"))
+                    {
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Confirmar Senha", Type = "password" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
+                                <input type="submit" value="Cadastrar" class="btn btn-light" />
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="col-lg-2 col-md-2 text-center">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  class="call-to-action bg-primary">
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="section-heading text-white">Deixe seu contato</h2>
+                    <hr class="light">
+                    <br />
+                </div>
+            </div>
+            @using (Html.BeginForm())
+            {
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                        <br />
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                        <br />
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                        <br />
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                        <br />
+                    </div>
+                </div>
+            
+                <div class="text-center">
+                    <br />
+                    <br />
+                    @Html.ActionLink("Mande-me Notícias", "Home", "Home", new { @class = "btn btn-light" })
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/popper/popper.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="~/Content/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/Content/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="~/Content/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="~/Content/js/creative.min.js"></script>
+</body>
+</html>

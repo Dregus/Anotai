@@ -1,0 +1,246 @@
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\ApplicationInsights.config
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\csc.exe
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\System.Collections.Immutable.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\vbc.exe
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\VBCSCompiler.exe
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\roslyn\VBCSCompiler.exe.config
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Anotai.dll.config
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Anotai.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Anotai.pdb
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Antlr3.Runtime.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\EntityFramework.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\EntityFramework.SqlServer.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.Web.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.WindowsServer.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.ApplicationInsights.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Google.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Web.Infrastructure.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Newtonsoft.Json.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Owin.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Helpers.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Mvc.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Optimization.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Razor.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.Deployment.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.Razor.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\WebGrease.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.Web.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AI.WindowsServer.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.ApplicationInsights.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Helpers.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Mvc.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Optimization.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.Razor.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.Deployment.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\System.Web.WebPages.Razor.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Antlr3.Runtime.pdb
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Newtonsoft.Json.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\EntityFramework.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\EntityFramework.SqlServer.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Google.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\obj\Debug\Anotai.dll
+c:\users\aleite\documents\visual studio 2015\Projects\Anotai\Anotai\obj\Debug\Anotai.pdb
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\ApplicationInsights.config
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\csc.exe
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\vbc.exe
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\VBCSCompiler.exe
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Anotai.dll.config
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Anotai.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Anotai.pdb
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Antlr3.Runtime.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\EntityFramework.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\EntityFramework.SqlServer.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.Web.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.ApplicationInsights.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Newtonsoft.Json.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Owin.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Helpers.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Mvc.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Optimization.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Razor.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.Deployment.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.Razor.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\WebGrease.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.Web.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.ApplicationInsights.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Helpers.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Mvc.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Optimization.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.Razor.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.Deployment.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\System.Web.WebPages.Razor.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Antlr3.Runtime.pdb
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Newtonsoft.Json.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\EntityFramework.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\EntityFramework.SqlServer.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\logonrm\Desktop\Anotai\Anotai\obj\Debug\Anotai.csprojResolveAssemblyReference.cache
+C:\Users\logonrm\Desktop\Anotai\Anotai\obj\Debug\Anotai.dll
+C:\Users\logonrm\Desktop\Anotai\Anotai\obj\Debug\Anotai.pdb
+C:\Users\aleite\Documents\Visual Studio 2015\Projects\Anotai\Anotai\obj\Debug\Anotai.csprojResolveAssemblyReference.cache
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\ApplicationInsights.config
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\csc.exe
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\vbc.exe
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\VBCSCompiler.exe
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Anotai.dll.config
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Anotai.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Anotai.pdb
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Antlr3.Runtime.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\EntityFramework.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\EntityFramework.SqlServer.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.Web.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.ApplicationInsights.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Newtonsoft.Json.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Owin.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Helpers.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Mvc.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Optimization.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Razor.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.Deployment.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.Razor.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\WebGrease.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.Web.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.ApplicationInsights.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Helpers.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Mvc.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Optimization.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.Razor.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.Deployment.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\System.Web.WebPages.Razor.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Antlr3.Runtime.pdb
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Newtonsoft.Json.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\EntityFramework.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\EntityFramework.SqlServer.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\obj\Debug\Anotai.csprojResolveAssemblyReference.cache
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\obj\Debug\Anotai.dll
+C:\Users\aleite\Desktop\Anotai\Site\Anotai\obj\Debug\Anotai.pdb
