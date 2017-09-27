@@ -58,6 +58,8 @@ namespace Anotai.Controllers
 
                         if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "I")
                             return RedirectToAction("Investimentos", "Investidor");
+                        else if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "A")
+                            return RedirectToAction("Rendimentos", "Administrador");
                     }
                     catch (Exception e)
                     {
