@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.h239079.anotai.RegistroActivity">
+
+    <EditText
+        android:id="@+id/edtNomeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/txtRegistrese"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtRegistrese"
+        android:layout_toStartOf="@+id/txtRegistrese"
+        android:textColor="#aba5a5"/>
+
+    <EditText
+        android:id="@+id/edtSenhaRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Senha"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@+id/edtNomeRegistro"
+        android:layout_alignBottom="@+id/edtNomeRegistro"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
+        android:textColor="#aba5a5"/>
+
+    <EditText
+        android:id="@+id/edtEmailRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:layout_below="@+id/edtNomeRegistro"
+        android:layout_alignLeft="@+id/edtNomeRegistro"
+        android:layout_alignStart="@+id/edtNomeRegistro"
+        android:layout_marginTop="13dp"
+        android:layout_alignRight="@+id/edtSenhaRegistro"
+        android:layout_alignEnd="@+id/edtSenhaRegistro"
+        android:textColor="#aba5a5"/>
+
+    <EditText
+        android:id="@+id/edtCelularRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Celular"
+        android:layout_below="@+id/edtEmailRegistro"
+        android:layout_alignLeft="@+id/edtEmailRegistro"
+        android:layout_alignStart="@+id/edtEmailRegistro"
+        android:layout_marginTop="14dp"
+        android:textColor="#aba5a5"/>
+
+    <TextView
+        android:id="@+id/txtRegistrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="REGISTRE-SE!"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCelularRegistro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="REGISTRAR"
+        android:background="#f7771b"/>
+</RelativeLayout>

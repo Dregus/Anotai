@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.h239079.anotai.MainActivity">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="LOGIN"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtLogin"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENHA"
+        android:layout_below="@+id/edtLogin"
+        android:layout_alignLeft="@+id/txtLogin"
+        android:layout_alignStart="@+id/txtLogin"
+        android:layout_marginTop="46dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtSenha"
+        android:layout_alignLeft="@+id/edtLogin"
+        android:layout_alignStart="@+id/edtLogin" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTRAR"
+        android:layout_marginTop="53dp"
+        android:textColor="#000"
+        android:layout_below="@+id/edtSenha"
+        android:layout_centerHorizontal="true"
+        android:background="#f7771b"/>
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="REGISTRAR"
+        android:textColor="#000"
+        android:background="#f7771b"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnEntrar"
+        android:layout_toEndOf="@+id/btnEntrar" />
+h</>
