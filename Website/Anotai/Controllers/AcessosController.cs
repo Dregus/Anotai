@@ -44,7 +44,28 @@ namespace Anotai.Controllers
         [HttpPost]
         public ActionResult Entrar(Usuario u)
         {
-            return View();
+            using (var ctx = new AnotaiContext())
+            {
+                if (u.Email != null && u.Senha != null)
+                {
+                    Usuario usuarioAutenticado = null;
+
+                    try
+                    {
+                        usuarioAutenticado = ctx.Usuarios.Where(usuario =>
+                            usuario.Email == u.Email &&
+                            usuario.Senha == u.Senha).First();
+
+                        if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "I")
+                            return RedirectToAction("Investimentos", "Investidor");
+                    }
+                    catch (Exception e)
+                    {
+
+                    }
+                }
+                return View();
+            }
         }
     }
 }
