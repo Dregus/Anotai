@@ -36,6 +36,26 @@ namespace Anotai.Controllers
             }
         }
 
+        public ActionResult CadastrarContato()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CadastrarContato(Usuario u)
+        {
+            using (var ctx = new AnotaiContext())
+            {
+                if (u.Nome != null && u.Sobrenome != null && u.Email != null && u.Telefone != null)
+                {
+                    u.TipoUsuario = "C";
+                    ctx.Usuarios.Add(u);
+                    ctx.SaveChanges();
+                }
+                return RedirectToAction("Home", "Home");
+            }
+        }
+
         public ActionResult Entrar()
         {
             return View();

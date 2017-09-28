@@ -229,7 +229,7 @@
                     <br />
                 </div>
             </div>
-            @using (Html.BeginForm())
+            @using (Html.BeginForm("CadastrarContato", "Acessos"))
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
@@ -253,7 +253,7 @@
                 <div class="text-center">
                     <br />
                     <br />
-                    @Html.ActionLink("Mande-me Notícias", "Home", "Home", new { @class = "btn btn-light" })
+                    <input type="submit" value="Mande-me Notícias" class="btn btn-light" />
                 </div>
             }
         </div>
