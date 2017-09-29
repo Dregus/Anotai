@@ -144,7 +144,7 @@
                             <br />
                         </div>
                     </div>
-                    @using(Html.BeginForm("Entrar", "Acessos")
+                    @using (Html.BeginForm("Entrar", "Acessos"))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
@@ -191,20 +191,19 @@
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row mx-auto">
-                            <div class="input-group">
                                 @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row mx-auto">
+                            <div class="input-group">
                                 @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
-                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Confirmar Senha", Type = "password" })
                             </div>
                         </div>
                         <br />
@@ -230,7 +229,7 @@
                     <br />
                 </div>
             </div>
-            @using (Html.BeginForm())
+            @using (Html.BeginForm("CadastrarContato", "Acessos"))
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
@@ -254,7 +253,7 @@
                 <div class="text-center">
                     <br />
                     <br />
-                    @Html.ActionLink("Mande-me Notícias", "Home", "Home", new { @class = "btn btn-light" })
+                    <input type="submit" value="Mande-me Notícias" class="btn btn-light" />
                 </div>
             }
         </div>
