@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content_menu_usuario"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.h239079.anotai.MenuUsuario"
-    tools:showIn="@layout/app_bar_menu_usuario">
+    tools:context="com.example.h239079.anotai.MenuUsuario">
 
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <TextView
+    android:layout_margin="30dp"
+    android:id="@+id/txtValor"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TOTAL:"/>
+
+    <TextView
+        android:id="@+id/txtCartaoUtilizado"
+        android:textSize="16dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARTÃO SENDO UTILIZADO" />
+
+    <TextView
+        android:id="@+id/txtNumeroCartao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxx xxxx 1234"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+
+</LinearLayout>
