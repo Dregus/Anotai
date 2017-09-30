@@ -20,7 +20,8 @@
         <activity
             android:name=".MenuUsuario"
             android:label="@string/title_activity_menu_usuario"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CadastroCartao"></activity>
     </application>
 
 </manifest>

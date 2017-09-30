@@ -3,13 +3,11 @@ package com.example.h239079.anotai;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RegistroActivity extends AppCompatActivity {
-
-
+public class CadastroCartao extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
+        setContentView(R.layout.activity_cadastro_cartao);
     }
 }

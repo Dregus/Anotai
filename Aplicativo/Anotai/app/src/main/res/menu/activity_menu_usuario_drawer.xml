@@ -3,21 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_comanda"
+            android:id="@+id/nav_codigo_comanda"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Código da Comanda" />
         <item
             android:id="@+id/nav_pagamento"
             android:icon="@drawable/ic_menu_manage"
             android:title="Pagamento" />
+
         <item
-            android:id="@+id/nav_Sair"
+            android:id="@+id/nav_compartilhar"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Compartilhar" />
+        <item
+            android:id="@+id/nav_sair"
             android:icon="@drawable/ic_menu_send"
             android:title="Sair" />
     </group>
-
 </menu>
