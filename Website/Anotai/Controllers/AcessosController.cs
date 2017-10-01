@@ -66,7 +66,7 @@ namespace Anotai.Controllers
         {
             using (var ctx = new AnotaiContext())
             {
-                if (u.Email != null && u.Senha != null)
+                if (u.Email != "" && u.Senha != "")
                 {
                     Usuario usuarioAutenticado = null;
 
@@ -83,10 +83,10 @@ namespace Anotai.Controllers
                     }
                     catch (Exception e)
                     {
-
+                        return View("Usuário ou senha inválidos: " + e.ToString());
                     }
                 }
-                return View();
+                return View("Preencha os campos");
             }
         }
     }
