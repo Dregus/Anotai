@@ -61,8 +61,6 @@ tools:context="com.example.h239079.anotai.CadastroCartao">
         android:layout_alignLeft="@+id/edtNumeroCartao"
         android:layout_alignStart="@+id/edtNumeroCartao"
         android:layout_below="@+id/edtNumeroCartao"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
         android:ems="10"
         android:hint="data de validade"
         android:inputType="textPersonName|number"
@@ -77,14 +75,12 @@ tools:context="com.example.h239079.anotai.CadastroCartao">
         android:layout_alignParentRight="true"
         android:layout_below="@+id/edtNumeroCartao"
         android:layout_marginEnd="38dp"
-        android:layout_marginLeft="68dp"
         android:layout_marginRight="38dp"
-        android:layout_marginStart="68dp"
         android:ems="10"
         android:hint="cvv"
         android:inputType="number"
-        android:layout_alignLeft="@+id/btnCadastrarCartao"
-        android:layout_alignStart="@+id/btnCadastrarCartao" />
+        android:layout_toRightOf="@+id/btnCadastrarCartao"
+        android:layout_toEndOf="@+id/btnCadastrarCartao" />
 
     <EditText
         android:id="@+id/edtTelefone"
@@ -106,20 +102,28 @@ tools:context="com.example.h239079.anotai.CadastroCartao">
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/telefone"
         android:layout_alignTop="@+id/edtTelefone"
-        android:layout_toLeftOf="@+id/edtTelefone"
-        android:layout_alignBottom="@+id/edtTelefone"
         android:layout_alignLeft="@+id/imageView4"
-        android:layout_alignStart="@+id/imageView4" />
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignBottom="@+id/edtTelefone"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
 
     <Button
         android:id="@+id/btnCadastrarCartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CADASTRAR"
-        android:background="#f7771b"
-        android:textColor="#000"
-        android:layout_marginTop="82dp"
         android:layout_below="@+id/imageView6"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="82dp"
+        android:background="#f7771b"
+        android:text="CADASTRAR CARTÃO"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/edtNumeroCartao"
+        android:layout_alignStart="@+id/edtNumeroCartao"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/edtNumeroCartao"
+        android:layout_alignEnd="@+id/edtNumeroCartao"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp" />
 
 </RelativeLayout>

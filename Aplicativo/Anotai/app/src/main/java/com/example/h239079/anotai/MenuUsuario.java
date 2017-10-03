@@ -24,17 +24,16 @@ public class MenuUsuario extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_usuario);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+
+      /*  LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View childLayout = inflater.inflate(R.layout.content_menu_usuario, (ViewGroup) findViewById(R.id.content_menu_usuario));
         FrameLayout menuFrameLayout = (FrameLayout) findViewById(R.id.menuFrame);
-        menuFrameLayout.addView(childLayout);
+        menuFrameLayout.addView(childLayout); **/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -42,10 +41,10 @@ public class MenuUsuario extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
- //   @Override
-    //public void onBackPressed() {
+     @Override
+     public void onBackPressed() {
         // metodo p o botao voltar nao funcionar
-   // }
+     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -77,13 +76,23 @@ public class MenuUsuario extends AppCompatActivity
 
         if (id == R.id.nav_codigo_comanda) {
 
+            Intent it= new Intent(this, GeradoraDeComanda.class);
+            startActivity(it);
+
         } else if (id == R.id.nav_pagamento) {
 
             Intent it= new Intent(this, CadastroCartao.class);
             startActivity(it);
 
+        }
+        else if (id == R.id.nav_sair) {
+
+            Intent it= new Intent(this, MainActivity.class);
+            startActivity(it);
+
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -92,6 +101,11 @@ public class MenuUsuario extends AppCompatActivity
 
     }
 
+    public void telaPagamento (View v)
+    {
+        Intent it = new Intent (this, Pagamento.class);
+        startActivity(it);
+    }
 
 
 }

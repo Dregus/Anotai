@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.h239079.anotai">
+    package="com.example.h239079.leitorqrcode">
 
     <application
         android:allowBackup="true"
@@ -16,16 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroActivity" />
-        <activity
-            android:name=".MenuUsuario"
-            android:label="@string/title_activity_menu_usuario"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".CadastroCartao" />
-        <activity android:name=".Garcom" />
-        <activity android:name=".GeradoraDeComanda" />
-        <activity android:name=".Pagamento" />
-        <activity android:name=".ComandaPaga"></activity>
     </application>
 
 </manifest>

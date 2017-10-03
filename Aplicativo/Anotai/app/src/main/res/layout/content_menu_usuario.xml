@@ -9,18 +9,27 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.h239079.anotai.MenuUsuario">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logoescrita"/>
+
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="290dp"
+        android:layout_marginTop="10dp"/>
 
     <TextView
     android:layout_margin="30dp"
-    android:id="@+id/txtValor"
+    android:id="@+id/txtTotal"
     android:textSize="16dp"
     android:textStyle="bold"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="TOTAL:"/>
+    android:text="TOTAL: R$"
+        android:textColor="#000"     />
+
 
     <TextView
         android:id="@+id/txtCartaoUtilizado"
@@ -29,7 +38,10 @@
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CARTÃO SENDO UTILIZADO" />
+        android:text="CARTÃO SENDO UTILIZADO"
+        android:textColor="#000"/>
+
+
 
     <TextView
         android:id="@+id/txtNumeroCartao"
@@ -38,7 +50,20 @@
         android:text="xxxx xxxx 1234"
         android:layout_marginLeft="30dp"
         android:textStyle="bold"
-        android:textSize="16dp"/>
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#f7771b"
+        android:onClick="telaPagamento"
+        android:text="FINALIZAR COMANDA"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
