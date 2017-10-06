@@ -20,7 +20,12 @@
         <activity
             android:name=".MenuUsuario"
             android:label="@string/title_activity_menu_usuario"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CadastroCartao" />
+        <activity android:name=".Garcom" />
+        <activity android:name=".GeradoraDeComanda" />
+        <activity android:name=".Pagamento" />
+        <activity android:name=".ComandaPaga"></activity>
     </application>
 
 </manifest>
