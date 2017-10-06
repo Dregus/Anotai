@@ -17,7 +17,7 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="250dp"
         android:layout_marginTop="10dp"/>
 
     <TextView
@@ -42,28 +42,40 @@
         android:textColor="#000"/>
 
 
-
     <TextView
         android:id="@+id/txtNumeroCartao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="xxxx xxxx 1234"
         android:layout_marginLeft="30dp"
-        android:textStyle="bold"
+        android:text="xxxx xxxx 1234"
+        android:textColor="#000"
         android:textSize="16dp"
-        android:textColor="#000"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnFinalizar"
         style="@android:style/Widget.Button"
-        android:layout_width="match_parent"
+        android:layout_width="163dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="40dp"
+        android:layout_marginRight="30dp"
         android:background="#f7771b"
         android:onClick="telaPagamento"
         android:text="FINALIZAR COMANDA"
         android:textAllCaps="false"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btnAtualizar"
+        style="@android:style/Widget.Button"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginRight="30dp"
+        android:background="#f7771b"
+        android:onClick="telaPagamento"
+        android:text="ATUALIZAR COMANDA"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
 
 </LinearLayout>
