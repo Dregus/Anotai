@@ -9,6 +9,8 @@ namespace Anotai.Controllers
 {
     public class HomeController : Controller
     {
+        private Repositorio db = new Repositorio();
+
         // GET: Index
         public ActionResult Index()
         {
@@ -17,7 +19,10 @@ namespace Anotai.Controllers
 
         public ActionResult Home()
         {
-            return View();
+            HomeViewModel model = new HomeViewModel();
+            model.Noticias = db.ListarNoticias();
+
+            return View(model);
         }
 
         [HttpPost]

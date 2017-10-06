@@ -8,9 +8,15 @@ namespace Anotai.Models
 {
     public class Noticia
     {
-        [Key]
+        [Display(Name = "ID")]
         public int NoticiaId { get; set; }
         public string Titulo { get; set; }
         public string Mensagem { get; set; }
+
+        //public Noticia()
+        //{
+        //    this.Titulo = Titulo;
+        //    this.Mensagem = Mensagem;
+        //}
     }
 }

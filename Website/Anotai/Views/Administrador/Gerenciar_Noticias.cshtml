@@ -1,4 +1,4 @@
-﻿@model Anotai.Models.Noticia
+﻿@model Anotai.Models.HomeViewModel
 
 @{
     Layout = null;
@@ -108,15 +108,15 @@
                                     <p class="category">Cadastre suas notícias utilizando o formulário abaixo</p>
                                 </div>
                                 <div class="content table-responsive table-full-width" style="margin:0px">
-                                    @using (Html.BeginForm("CadastrarNoticia", "Administrador"))
+                                    @using (Html.BeginForm("CadastrarNoticia", "Administrador", FormMethod.Post))
                                     {
                                         <div class="form-group">
                                             <label>Título</label>
-                                            @Html.TextBoxFor(model => model.Titulo, new { @class = "form-control" })
+                                            @Html.TextBoxFor(m => m.Noticia.Titulo, new { @class = "form-control" })
                                         </div>
                                         <div class="form-group">
                                             <label>Descrição Notícia</label>
-                                            @Html.TextAreaFor(model => model.Mensagem, new { @class = "form-control", rows = "3" })
+                                            @Html.TextAreaFor(m => m.Noticia.Mensagem, new { @class = "form-control", rows = "3" })
                                         </div>
 
                                         <div class="form-group">
@@ -135,7 +135,25 @@
                                     <p class="category">Edite ou apague notícias com o gerenciador abaixo</p>
                                 </div>
                                 <div class="content table-responsive table-full-width">
-
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                        <th>@Html.DisplayNameFor(model => model.Noticia.NoticiaId)</th>
+                                        <th>@Html.DisplayNameFor(model => model.Noticia.Titulo)</th>
+                                        <th>@Html.DisplayNameFor(model => model.Noticia.Mensagem)</th>
+                                        <th></th>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.Noticias)
+                                            {
+                                                <tr>
+                                                    <td>@item.NoticiaId</td>
+                                                    <td>@item.Titulo</td>
+                                                    <td>@item.Mensagem</td>
+                                                    <td>Editar | Excluir</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-﻿@model Anotai.Models.Usuario
+﻿@model Anotai.Models.HomeViewModel
 
 @{
     Layout = null;
@@ -154,13 +154,13 @@
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                                @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                                @Html.TextBoxFor(model => model.Usuario.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
                             </div>
                         </div>
                         <br />
@@ -181,35 +181,35 @@
                             <br />
                         </div>
                     </div>
-                    @using (Html.BeginForm("Cadastrar", "Acessos"))
+                    @using (Html.BeginForm("Cadastrar", "Acessos", FormMethod.Post))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                                @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control", placeholder = "Nome" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                                @Html.TextBoxFor(model => model.Usuario.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                                @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                                @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                                @Html.TextBoxFor(model => model.Usuario.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
                             </div>
                         </div>
                         <br />
@@ -226,6 +226,40 @@
             </div>
         </div>
     </section>
+    <section class="bg-dark text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @for (var i = 0; i < Model.Noticias.Count(); i++)
+                {
+                    if (i == 0)
+                    {
+                        <div class="carousel-item active">
+                            @Model.Noticias.ElementAt(i).Titulo
+                            <br /><br />
+                            @Model.Noticias.ElementAt(i).Mensagem
+                        </div>
+                    }
+                    else
+                    {
+                        <div align-content:center" class="carousel-item">
+                            @Model.Noticias.ElementAt(i).Titulo
+                            <br /><br />
+                            @Model.Noticias.ElementAt(i).Mensagem
+                        </div>
+                    }
+                }
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
     <section class="call-to-action bg-primary">
         <div class="container text-center">
             <div class="row text-center">
@@ -239,19 +273,19 @@
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                        @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control", placeholder = "Nome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                        @Html.TextBoxFor(model => model.Usuario.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                        @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                        @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                         <br />
                     </div>
                 </div>

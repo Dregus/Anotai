@@ -21,18 +21,21 @@ namespace Anotai.Controllers
         }
 
         [HttpPost]
-        public ActionResult Cadastrar(Usuario u)
+        public ActionResult Cadastrar(HomeViewModel hvm)
         {
             using (var ctx = new AnotaiContext())
             {
-                if (u.Nome != null && u.Sobrenome != null && u.Email != null && u.Telefone != null && u.Senha != null)
+                if (hvm.Usuario.Nome != null && hvm.Usuario.Sobrenome != null && hvm.Usuario.Email != null && hvm.Usuario.Telefone != null && hvm.Usuario.Senha != null)
                 {
-                    u.TipoUsuario = "I";
-                    ctx.Usuarios.Add(u);
+                    hvm.Usuario.TipoUsuario = "I";
+                    ctx.Usuarios.Add(hvm.Usuario);
                     ctx.SaveChanges();
                     return RedirectToAction("Investimentos", "Investidor");
+                } else
+                {
+                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
                 }
-                return View();
+                return RedirectToAction("Home", "Home");
             }
         }
 
@@ -62,19 +65,19 @@ namespace Anotai.Controllers
         }
 
         [HttpPost]
-        public ActionResult Entrar(Usuario u)
+        public ActionResult Entrar(HomeViewModel hvm)
         {
             using (var ctx = new AnotaiContext())
             {
-                if (u.Email != "" && u.Senha != "")
+                if (hvm.Usuario.Email != "" && hvm.Usuario.Senha != "")
                 {
                     Usuario usuarioAutenticado = null;
 
                     try
                     {
                         usuarioAutenticado = ctx.Usuarios.Where(usuario =>
-                            usuario.Email == u.Email &&
-                            usuario.Senha == u.Senha).First();
+                            usuario.Email == hvm.Usuario.Email &&
+                            usuario.Senha == hvm.Usuario.Senha).First();
 
                         if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "I")
                             return RedirectToAction("Investimentos", "Investidor");

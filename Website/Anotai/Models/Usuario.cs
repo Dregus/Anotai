@@ -8,8 +8,18 @@ namespace Anotai.Models
 {
     public class Usuario
     {
-        [Key]
-        public int    Id          { get; set; }
+        //public Usuario(string Nome, string Sobrenome, string Telefone, string TipoUsuario, string Email, string Senha)
+        //{
+        //  this.Nome = Nome;
+        //  this.Sobrenome = Sobrenome;
+        //  this.Telefone = Telefone;
+        //  this.TipoUsuario = TipoUsuario;
+        //  this.Email = Email;
+        //  this.Senha = Senha;
+        //}
+
+        [Display(Name = "ID")]
+        public int    UsuarioId   { get; set; }
         public string Nome        { get; set; }
         public string Sobrenome   { get; set; }
         public string Telefone    { get; set; }
