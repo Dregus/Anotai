@@ -149,7 +149,7 @@
                                                     <td>@item.NoticiaId</td>
                                                     <td>@item.Titulo</td>
                                                     <td>@item.Mensagem</td>
-                                                    <td>Editar | Excluir</td>
+                                                    <td>@Html.ActionLink("Editar", "Editar", new { objNoticia = item }, new { @class = "btn btn-light" }) @Html.ActionLink("Excluir", "Excluir", new { id = item.NoticiaId }, new { @class = "btn btn-light" })</td>
                                                 </tr>
                                             }
                                         </tbody>

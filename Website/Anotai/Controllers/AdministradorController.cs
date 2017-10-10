@@ -47,8 +47,12 @@ namespace Anotai.Controllers
                     //Parâmetro para notificação de tela
                     ViewBag.Cadastrado = "Sim";
 
+                    //Atualiza o model e passa para a tela
+                    HomeViewModel model = new HomeViewModel();
+                    model.Noticias = db.ListarNoticias();
+
                     //Direciona para a tela
-                    return View("Gerenciar_Noticias");
+                    return View("Gerenciar_Noticias", model);
                 }
                 else
                 {
@@ -59,6 +63,42 @@ namespace Anotai.Controllers
                     return View("Gerenciar_Noticias");
                 }
             }
+        }
+
+        public ActionResult Editar()
+        {
+            //Apenas recupera as notícias que a tela precisa
+            HomeViewModel model = new HomeViewModel();
+            model.Noticias = db.ListarNoticias();
+
+            return View("Gerenciar_Noticias", model);
+        }
+
+        [HttpPost]
+        public ActionResult Editar(Noticia objetoNoticia)
+        {
+            //Edita o registro e atualiza a tela
+            HomeViewModel model = new HomeViewModel();
+            db.AlterarNoticia(objetoNoticia);
+            model.Noticias = db.ListarNoticias();
+
+            return View("Gerenciar_Noticias", model);
+        }
+
+        public ActionResult Excluir(int id)
+        {
+            //Exclui o registro e atualiza a tela
+            HomeViewModel model = new HomeViewModel();
+            db.ExcluirNoticia(id);
+            model.Noticias = db.ListarNoticias();
+
+            return View("Gerenciar_Noticias", model);
+        }
+
+        [HttpPost]
+        public ActionResult Excluir()
+        {
+            return View();
         }
 
         public ActionResult Perfil()
