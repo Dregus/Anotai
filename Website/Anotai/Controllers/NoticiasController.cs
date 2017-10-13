@@ -13,14 +13,14 @@ namespace Anotai.Controllers
     public class NoticiasController : Controller
     {
         private AnotaiContext db = new AnotaiContext();
-
-        // GET: Noticias
+        
         public ActionResult Index()
         {
-            return View(db.Noticias.ToList());
+            HomeViewModel hvm = new HomeViewModel();
+            hvm.Noticias = db.Noticias.ToList();
+            return View("Gerenciar_Noticias", hvm);
         }
-
-        // GET: Noticias/Details/5
+        
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -34,31 +34,51 @@ namespace Anotai.Controllers
             }
             return View(noticia);
         }
-
-        // GET: Noticias/Create
+        
         public ActionResult Create()
         {
             return View();
         }
-
-        // POST: Noticias/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "NoticiaId,Titulo,Mensagem")] Noticia noticia)
+        public ActionResult Create(HomeViewModel hvm)
         {
-            if (ModelState.IsValid)
+            using (var ctx = new AnotaiContext())
             {
-                db.Noticias.Add(noticia);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                Repositorio repositorio = new Repositorio();
+
+                if (hvm.Noticia.Titulo != null && hvm.Noticia.Mensagem != null)
+                {
+                    repositorio.IncluirNoticia(hvm.Noticia);
+
+                    //Limpa model e tela
+                    ModelState.Clear();
+
+                    //Parâmetro para notificação de tela
+                    ViewBag.Cadastrado = "Sim";
+
+                    //Atualiza o model e passa para a tela
+                    HomeViewModel model = new HomeViewModel();
+                    model.Noticias = repositorio.ListarNoticias();
+
+                    //Direciona para a tela
+                    return View("Gerenciar_Noticias", model);
+                }
+                else
+                {
+                    //Parâmetro para notificação de tela
+                    ViewBag.Cadastrado = "Não";
+
+                    //Atualiza o model e passa para a tela
+                    HomeViewModel model = new HomeViewModel();
+                    model.Noticias = repositorio.ListarNoticias();
+
+                    //Direciona para a tela
+                    return View("Gerenciar_Noticias", model);
+                }
             }
-
-            return View(noticia);
         }
-
-        // GET: Noticias/Edit/5
+        
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -70,14 +90,10 @@ namespace Anotai.Controllers
             {
                 return HttpNotFound();
             }
-            return View(noticia);
+            return View("Editar_Noticias", noticia);
         }
-
-        // POST: Noticias/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "NoticiaId,Titulo,Mensagem")] Noticia noticia)
         {
             if (ModelState.IsValid)
@@ -86,33 +102,33 @@ namespace Anotai.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(noticia);
+            return View("Editar_Noticias", noticia);
         }
-
-        // GET: Noticias/Delete/5
-        public ActionResult Delete(int? id)
+        
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Noticia noticia = db.Noticias.Find(id);
-            if (noticia == null)
-            {
-                return HttpNotFound();
-            }
-            return View(noticia);
-        }
+            Repositorio repositorio = new Repositorio();
 
-        // POST: Noticias/Delete/5
+            //Exclui o registro e atualiza a tela
+            HomeViewModel model = new HomeViewModel();
+            repositorio.ExcluirNoticia(id);
+            model.Noticias = repositorio.ListarNoticias();
+
+            return View("Gerenciar_Noticias", model);
+        }
+        
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             Noticia noticia = db.Noticias.Find(id);
             db.Noticias.Remove(noticia);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Rendimentos()
+        {
+            return View("Relatorio_Rendimentos");
         }
 
         protected override void Dispose(bool disposing)

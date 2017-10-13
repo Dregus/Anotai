@@ -195,8 +195,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AcessosController.cs" />
-    <Compile Include="Controllers\AdministradorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvestidorController.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
@@ -248,13 +246,9 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Investidor\Meus_Investimentos.cshtml" />
-    <Content Include="Views\Administrador\Relatorio_Rendimentos.cshtml" />
-    <Content Include="Views\Administrador\Gerenciar_Noticias.cshtml" />
-    <Content Include="Views\Noticias\Create.cshtml" />
-    <Content Include="Views\Noticias\Delete.cshtml" />
-    <Content Include="Views\Noticias\Details.cshtml" />
-    <Content Include="Views\Noticias\Edit.cshtml" />
-    <Content Include="Views\Noticias\Index.cshtml" />
+    <Content Include="Views\Noticias\Editar_Noticias.cshtml" />
+    <Content Include="Views\Noticias\Gerenciar_Noticias.cshtml" />
+    <Content Include="Views\Noticias\Relatorio_Rendimentos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -262,7 +256,6 @@
     <Folder Include="Content\js\" />
     <Folder Include="Content\scss\" />
     <Folder Include="Content\vendor\" />
-    <Folder Include="Views\Acessos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

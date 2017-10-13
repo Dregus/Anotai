@@ -12,11 +12,5 @@ namespace Anotai.Models
         public int NoticiaId { get; set; }
         public string Titulo { get; set; }
         public string Mensagem { get; set; }
-
-        //public Noticia()
-        //{
-        //    this.Titulo = Titulo;
-        //    this.Mensagem = Mensagem;
-        //}
     }
 }

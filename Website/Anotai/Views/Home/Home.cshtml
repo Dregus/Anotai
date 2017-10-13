@@ -150,7 +150,14 @@
                             <br />
                         </div>
                     </div>
-                    @using (Html.BeginForm("Entrar", "Acessos"))
+                    @if (ViewBag.ErroLogin != null)
+                    {
+                        <div class="alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert">×</a>
+                            <strong>Erro!</strong> @ViewBag.ErroLogin
+                        </div>
+                    }
+                    @using (Html.BeginForm("Entrar", "Home"))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
@@ -181,7 +188,7 @@
                             <br />
                         </div>
                     </div>
-                    @using (Html.BeginForm("Cadastrar", "Acessos", FormMethod.Post))
+                    @using (Html.BeginForm("Cadastrar", "Home"))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
@@ -269,7 +276,7 @@
                     <br />
                 </div>
             </div>
-            @using (Html.BeginForm("CadastrarContato", "Acessos"))
+            @using (Html.BeginForm("CadastrarContato"))
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
