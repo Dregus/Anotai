@@ -1,4 +1,4 @@
-﻿@model Anotai.Models.Usuario
+﻿@model Anotai.Models.HomeViewModel
 
 @{
     Layout = null;
@@ -57,8 +57,10 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Fica tranquilo, sua comanda tá com a gente!</h1>
                 <hr>
-                <p>Seus gastos estão todos na palma da sua mão, sem papel, sem caneta, sem essa de perder
-                a comanda e pagar um absurdo! Apenas seu celular, inclusive, Anotaí garçom!</p>
+                <p>
+                    Seus gastos estão todos na palma da sua mão, sem papel, sem caneta, sem essa de perder
+                    a comanda e pagar um absurdo! Apenas seu celular, inclusive, Anotaí garçom!
+                </p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#funcionamento">Descubra Mais</a>
             </div>
         </div>
@@ -69,9 +71,11 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-heading text-white">Controle é o nome!</h2>
                     <hr class="light">
-                    <p class="text-faded">Você entra no estabelecimento já com sua comanda em mãos (literalmente). 
-                    Nada de atendentes marcando valores errados ou itens a mais na sua comanda. Tenha sempre o 
-                    controle de seus pedidos! Descrição e imagem, valor unitário e total em um aplicativo.</p>
+                    <p class="text-faded">
+                        Você entra no estabelecimento já com sua comanda em mãos (literalmente).
+                        Nada de atendentes marcando valores errados ou itens a mais na sua comanda. Tenha sempre o
+                        controle de seus pedidos! Descrição e imagem, valor unitário e total em um aplicativo.
+                    </p>
                     <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">E o que mais?</a>
                 </div>
             </div>
@@ -109,8 +113,10 @@
                         <i class="fa fa-4x fa-check-square-o text-primary sr-icons"></i>
                         <hr class="light">
                         <h3>Valide a comanda</h3>
-                        <p class="text-muted">Cada estabelecimento tem seu jeito de validar! Dê uma olhada
-                        com o garçom, ele é o cara!</p>
+                        <p class="text-muted">
+                            Cada estabelecimento tem seu jeito de validar! Dê uma olhada
+                            com o garçom, ele é o cara!
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -144,17 +150,24 @@
                             <br />
                         </div>
                     </div>
-                    @using (Html.BeginForm("Entrar", "Acessos"))
+                    @if (ViewBag.ErroLogin != null)
+                    {
+                        <div class="alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert">×</a>
+                            <strong>Erro!</strong> @ViewBag.ErroLogin
+                        </div>
+                    }
+                    @using (Html.BeginForm("Entrar", "Home"))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                                @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                                @Html.TextBoxFor(model => model.Usuario.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
                             </div>
                         </div>
                         <br />
@@ -175,35 +188,35 @@
                             <br />
                         </div>
                     </div>
-                    @using (Html.BeginForm("Cadastrar", "Acessos"))
+                    @using (Html.BeginForm("Cadastrar", "Home"))
                     {
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                                @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control", placeholder = "Nome" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                                @Html.TextBoxFor(model => model.Usuario.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                                @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                                @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                             </div>
                         </div>
                         <br />
                         <div class="row mx-auto">
                             <div class="input-group">
-                                @Html.TextBoxFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
+                                @Html.TextBoxFor(model => model.Usuario.Senha, new { @class = "form-control", placeholder = "Senha", Type = "password" })
                             </div>
                         </div>
                         <br />
@@ -220,7 +233,41 @@
             </div>
         </div>
     </section>
-    <section  class="call-to-action bg-primary">
+    <section class="bg-dark text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @for (var i = 0; i < Model.Noticias.Count(); i++)
+                {
+                    if (i == 0)
+                    {
+                        <div class="carousel-item active">
+                            @Model.Noticias.ElementAt(i).Titulo
+                            <br /><br />
+                            @Model.Noticias.ElementAt(i).Mensagem
+                        </div>
+                    }
+                    else
+                    {
+                        <div align-content:center" class="carousel-item">
+                            @Model.Noticias.ElementAt(i).Titulo
+                            <br /><br />
+                            @Model.Noticias.ElementAt(i).Mensagem
+                        </div>
+                    }
+                }
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="call-to-action bg-primary">
         <div class="container text-center">
             <div class="row text-center">
                 <div class="col">
@@ -229,27 +276,27 @@
                     <br />
                 </div>
             </div>
-            @using (Html.BeginForm("CadastrarContato", "Acessos"))
+            @using (Html.BeginForm("CadastrarContato"))
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", placeholder = "Nome" })
+                        @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control", placeholder = "Nome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                        @Html.TextBoxFor(model => model.Usuario.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                        @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                        @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                         <br />
                     </div>
                 </div>
-            
+
                 <div class="text-center">
                     <br />
                     <br />

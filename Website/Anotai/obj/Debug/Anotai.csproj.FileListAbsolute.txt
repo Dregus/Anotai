@@ -323,6 +323,6 @@ C:\Users\aleite\Anotai\Website\Anotai\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\aleite\Anotai\Website\Anotai\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\aleite\Anotai\Website\Anotai\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\aleite\Anotai\Website\Anotai\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\aleite\Anotai\Website\Anotai\obj\Debug\Anotai.csprojResolveAssemblyReference.cache
 C:\Users\aleite\Anotai\Website\Anotai\obj\Debug\Anotai.dll
 C:\Users\aleite\Anotai\Website\Anotai\obj\Debug\Anotai.pdb
+C:\Users\aleite\Anotai\Website\Anotai\obj\Debug\Anotai.csprojResolveAssemblyReference.cache
