@@ -13,6 +13,7 @@ namespace Anotai.Controllers
     public class NoticiasController : Controller
     {
         private AnotaiContext db = new AnotaiContext();
+        private Repositorio repositorio = new Repositorio();
         
         public ActionResult Index()
         {
@@ -126,9 +127,47 @@ namespace Anotai.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Rendimentos()
+        public ActionResult Relatorios()
         {
-            return View("Relatorio_Rendimentos");
+            HomeViewModel model = new HomeViewModel();
+            model.Usuarios = repositorio.ListarUsuarios();
+            model.Contatos = repositorio.ListarContatos();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult PesquisarUsuarios(HomeViewModel hvm)
+        {
+            HomeViewModel model = new HomeViewModel();
+            model.Contatos = repositorio.ListarContatos();
+
+            model.Usuarios = db.Usuarios.Where(u =>
+                u.Nome == hvm.Usuario.Nome ||
+                u.Sobrenome == hvm.Usuario.Sobrenome ||
+                u.Telefone == hvm.Usuario.Telefone ||
+                u.Email == hvm.Usuario.Email ||
+                u.Endereco == hvm.Usuario.Endereco)
+                    .ToList();
+
+            return View("Relatorios", model);
+        }
+
+        [HttpPost]
+        public ActionResult PesquisarContatos(HomeViewModel hvm)
+        {
+            HomeViewModel model = new HomeViewModel();
+            model.Usuarios = repositorio.ListarUsuarios();
+
+            model.Contatos = db.Contatos.Where(c =>
+                c.Nome == hvm.Contato.Nome ||
+                c.Sobrenome == hvm.Contato.Sobrenome ||
+                c.Telefone == hvm.Contato.Telefone ||
+                c.Email == hvm.Contato.Email ||
+                c.Mensagem == hvm.Contato.Mensagem)
+                    .ToList();
+
+            return View("Relatorios", model);
         }
 
         protected override void Dispose(bool disposing)

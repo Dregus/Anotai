@@ -22,6 +22,17 @@
     <link href="~/Content/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="~/Content/css/creative.min.css" rel="stylesheet">
+
+    <style>
+        .popup_info {
+            width: 400px;
+            position: absolute;
+            z-index: 100;
+            top: 50px;
+            right: 50px;
+        }
+}
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -53,6 +64,33 @@
         </div>
     </nav>
     <header class="masthead">
+        @if (ViewBag.ErroLogin != null)
+        {
+            <div class="alert alert-danger popup_info">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Erro!</strong> @ViewBag.ErroLogin
+            </div>
+        }
+        @if (ViewBag.ContatoOk != null)
+        {
+            <div class="alert alert-success popup_info">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Obrigado!</strong> @ViewBag.ContatoOk
+            </div>
+        } else if (ViewBag.ContatoErro != null)
+        {
+            <div class="alert alert-danger popup_info">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Erro!</strong> @ViewBag.ContatoErro
+            </div>
+        }
+        @if (ViewBag.CadastrarErro != null)
+        {
+            <div class="alert alert-danger popup_info">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Erro!</strong> @ViewBag.CadastrarErro
+            </div>
+        }
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Fica tranquilo, sua comanda tá com a gente!</h1>
@@ -150,13 +188,6 @@
                             <br />
                         </div>
                     </div>
-                    @if (ViewBag.ErroLogin != null)
-                    {
-                        <div class="alert alert-danger">
-                            <a href="#" class="close" data-dismiss="alert">×</a>
-                            <strong>Erro!</strong> @ViewBag.ErroLogin
-                        </div>
-                    }
                     @using (Html.BeginForm("Entrar", "Home"))
                     {
                         <div class="row mx-auto">
@@ -276,31 +307,34 @@
                     <br />
                 </div>
             </div>
-            @using (Html.BeginForm("CadastrarContato"))
+            @using (Html.BeginForm("CadastrarContato", "Home"))
             {
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control", placeholder = "Nome" })
+                        @Html.TextBoxFor(model => model.Contato.Nome, new { @class = "form-control", placeholder = "Nome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Usuario.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
+                        @Html.TextBoxFor(model => model.Contato.Sobrenome, new { @class = "form-control", placeholder = "Sobrenome" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control", placeholder = "Email" })
+                        @Html.TextBoxFor(model => model.Contato.Email, new { @class = "form-control", placeholder = "Email" })
                         <br />
                     </div>
                     <div class="col-lg-3 col-md-3">
-                        @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control", placeholder = "Telefone" })
+                        @Html.TextBoxFor(model => model.Contato.Telefone, new { @class = "form-control", placeholder = "Telefone" })
                         <br />
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        @Html.TextAreaFor(model => model.Contato.Mensagem, new { @class = "form-control", placeholder = "Mensagem" })
                     </div>
                 </div>
 
                 <div class="text-center">
                     <br />
                     <br />
-                    <input type="submit" value="Mande-me Notícias" class="btn btn-light" />
+                    <input type="submit" value="Enviar Mensagem" class="btn btn-light" />
                 </div>
             }
         </div>
