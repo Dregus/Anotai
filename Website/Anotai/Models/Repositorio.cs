@@ -22,11 +22,6 @@ namespace Anotai.Models
             _context.SaveChanges();
         }
 
-        public IEnumerable<Noticia> ListarNoticias()
-        {
-            return _context.Noticias.ToList();
-        }
-
         public Noticia ListarNoticia(int codigo)
         {
             return _context.Noticias.Where(n => n.NoticiaId == codigo).First();
@@ -37,20 +32,20 @@ namespace Anotai.Models
             _context.Noticias.Remove(ListarNoticia(codigo));
             _context.SaveChanges();
         }
-
-        public void AlterarNoticia(Noticia noticia)
+        
+        public IEnumerable<Noticia> ListarNoticias()
         {
-            //_context.Noticias.Where(n => n.Id == noticia.Id)
-            //        .ToList()
-            //        .ForEach(s =>
-            //        {
-            //            s.Id = noticia.Id;
-            //            s.Titulo = noticia.Titulo;
-            //            s.Mensagem = noticia.Mensagem;
-            //        });
+            return _context.Noticias.ToList();
+        }
 
-            _context.Entry(noticia).State = EntityState.Modified;
-            _context.SaveChanges();
+        public IEnumerable<Contato> ListarContatos()
+        {
+            return _context.Contatos.ToList();
+        }
+
+        public IEnumerable<Usuario> ListarUsuarios()
+        {
+            return _context.Usuarios.ToList();
         }
     }
 }

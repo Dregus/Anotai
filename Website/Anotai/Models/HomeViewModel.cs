@@ -12,10 +12,14 @@ namespace Anotai.Models
         {
             Usuario = new Usuario();
             Noticia = new Noticia();
+            Contato = new Contato();
         }
 
         public Noticia Noticia { get; set; }
         public Usuario Usuario { get; set; }
+        public Contato Contato { get; set; }
         public IEnumerable<Noticia> Noticias { get; set; }
+        public IEnumerable<Usuario> Usuarios { get; set; }
+        public IEnumerable<Contato> Contatos { get; set; }
     }
 }

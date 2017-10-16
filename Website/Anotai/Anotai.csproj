@@ -198,10 +198,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvestidorController.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AnotaiContext.cs" />
+    <Compile Include="Models\Contato.cs" />
     <Compile Include="Models\Noticia.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Models\Repositorio.cs" />
@@ -248,7 +250,8 @@
     <Content Include="Views\Investidor\Meus_Investimentos.cshtml" />
     <Content Include="Views\Noticias\Editar_Noticias.cshtml" />
     <Content Include="Views\Noticias\Gerenciar_Noticias.cshtml" />
-    <Content Include="Views\Noticias\Relatorio_Rendimentos.cshtml" />
+    <Content Include="Views\Noticias\Relatorios.cshtml" />
+    <Content Include="Views\Perfil\Editar_Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

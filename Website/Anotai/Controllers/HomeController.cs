@@ -21,6 +21,7 @@ namespace Anotai.Controllers
         {
             HomeViewModel model = new HomeViewModel();
             model.Noticias = db.ListarNoticias();
+            ViewData.Clear();
 
             return View(model);
         }
@@ -36,15 +37,21 @@ namespace Anotai.Controllers
         {
             using (var ctx = new AnotaiContext())
             {
+
+                HomeViewModel model = new HomeViewModel();
+                model.Noticias = db.ListarNoticias();
+
                 if (hvm.Usuario.Nome != null && hvm.Usuario.Sobrenome != null && hvm.Usuario.Email != null && hvm.Usuario.Telefone != null && hvm.Usuario.Senha != null)
                 {
                     hvm.Usuario.TipoUsuario = "I";
                     ctx.Usuarios.Add(hvm.Usuario);
                     ctx.SaveChanges();
                     return RedirectToAction("Investimentos", "Investidor");
+                } else
+                {
+                    ViewBag.CadastrarErro = "Por favor, preencha todos os campos e tente novamente.";
+                    return View("Home", model);
                 }
-
-                return RedirectToAction("Home", "Home");
             }
         }
 
@@ -54,17 +61,31 @@ namespace Anotai.Controllers
         }
 
         [HttpPost]
-        public ActionResult CadastrarContato(Usuario u)
+        public ActionResult CadastrarContato(HomeViewModel hvm)
         {
             using (var ctx = new AnotaiContext())
             {
-                if (u.Nome != null && u.Sobrenome != null && u.Email != null && u.Telefone != null)
+
+                HomeViewModel model = new HomeViewModel();
+                model.Noticias = db.ListarNoticias();
+
+                if (hvm.Contato.Nome != null && hvm.Contato.Sobrenome != null && hvm.Contato.Email != null && hvm.Contato.Telefone != null && hvm.Contato.Mensagem != null)
                 {
-                    u.TipoUsuario = "C";
-                    ctx.Usuarios.Add(u);
+                    ctx.Contatos.Add(hvm.Contato);
                     ctx.SaveChanges();
+
+                    ViewBag.ContatoOk = "Sua mensagem foi enviada com sucesso.";
+
+                    //Limpa model e tela
+                    ModelState.Clear();
+
+                    return View("Home", model);
+                } else
+                {
+                    ViewBag.ContatoErro = "Por favor, preencha todos os campos antes de enviar a mensagem.";
+
+                    return View("Home", model);
                 }
-                return RedirectToAction("Home", "Home");
             }
         }
 
