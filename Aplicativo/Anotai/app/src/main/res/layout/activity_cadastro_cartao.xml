@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.h239079.anotai.CadastroCartao">
+
+    <TextView
+        android:id="@+id/txtCadastroCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_weight="1"
+        android:text="CADASTRE SEU CARTÃO"
+        android:textColor="#000"
+        android:textSize="@dimen/nav_header_vertical_spacing"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNumeroCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="número do cartão"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtCadastroCartao"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cartaologo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignTop="@+id/edtNumeroCartao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtCadastroCartao"
+        android:layout_above="@+id/edtValidade"
+        android:layout_toLeftOf="@+id/txtCadastroCartao"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <EditText
+        android:id="@+id/edtValidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtNumeroCartao"
+        android:layout_alignStart="@+id/edtNumeroCartao"
+        android:layout_below="@+id/edtNumeroCartao"
+        android:ems="10"
+        android:hint="data de validade"
+        android:inputType="textPersonName|number"
+        android:layout_alignRight="@+id/btnCadastrarCartao"
+        android:layout_alignEnd="@+id/btnCadastrarCartao" />
+
+    <EditText
+        android:id="@+id/edtCvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtNumeroCartao"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="cvv"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/btnCadastrarCartao"
+        android:layout_toEndOf="@+id/btnCadastrarCartao" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="telefone"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edtValidade"
+        android:layout_alignLeft="@+id/edtValidade"
+        android:layout_alignStart="@+id/edtValidade"
+        android:layout_marginTop="37dp"
+        android:layout_alignRight="@+id/edtNumeroCartao"
+        android:layout_alignEnd="@+id/edtNumeroCartao" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/telefone"
+        android:layout_alignTop="@+id/edtTelefone"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignBottom="@+id/edtTelefone"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btnCadastrarCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="82dp"
+        android:background="#f7771b"
+        android:text="CADASTRAR CARTÃO"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/edtNumeroCartao"
+        android:layout_alignStart="@+id/edtNumeroCartao"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/edtNumeroCartao"
+        android:layout_alignEnd="@+id/edtNumeroCartao"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp" />
+
+</RelativeLayout>

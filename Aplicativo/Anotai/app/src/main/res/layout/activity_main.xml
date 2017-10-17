@@ -6,69 +6,58 @@
     android:layout_height="match_parent"
     tools:context="com.example.h239079.anotai.MainActivity">
 
-    <TextView
-        android:id="@+id/txtLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="LOGIN"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#000"/>
-
     <EditText
-        android:id="@+id/edtLogin"
+        android:id="@+id/edtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="login"
         android:inputType="textPersonName"
-        android:layout_below="@+id/txtLogin"
+        android:layout_above="@+id/edtSenha"
         android:layout_centerHorizontal="true"
-        />
-
-    <TextView
-        android:id="@+id/txtSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SENHA"
-        android:layout_below="@+id/edtLogin"
-        android:layout_alignLeft="@+id/txtLogin"
-        android:layout_alignStart="@+id/txtLogin"
-        android:layout_marginTop="46dp"
-        android:textColor="#000"/>
+        android:layout_marginBottom="44dp" />
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
         android:ems="10"
+        android:hint="senha"
         android:inputType="textPersonName"
-        android:layout_below="@+id/txtSenha"
-        android:layout_alignLeft="@+id/edtLogin"
-        android:layout_alignStart="@+id/edtLogin" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edtUsuario"
+        android:layout_alignStart="@+id/edtUsuario" />
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#f7771b"
+        android:onClick="Login"
         android:text="ENTRAR"
-        android:layout_marginTop="53dp"
         android:textColor="#000"
-        android:layout_below="@+id/edtSenha"
-        android:layout_centerHorizontal="true"
-        android:background="#f7771b"/>
+        android:layout_marginBottom="57dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/btnRegistro"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
-        android:text="REGISTRAR"
-        android:textColor="#000"
-        android:background="#f7771b"
+        app:srcCompat="@drawable/logoescrita"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnEntrar"
-        android:layout_toEndOf="@+id/btnEntrar" />
-h</>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:onClick="Registro"
+        android:text="Ainda não possui conta? Cadastre-se!"
+        android:textColor="#138bdc"
+        android:textStyle="bold" />
+</RelativeLayout>

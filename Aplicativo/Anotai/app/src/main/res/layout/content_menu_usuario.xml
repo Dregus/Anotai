@@ -1,11 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content_menu_usuario"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.h239079.anotai.MenuUsuario"
-    tools:showIn="@layout/app_bar_menu_usuario">
+    tools:context="com.example.h239079.anotai.MenuUsuario">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logoescrita"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+    android:layout_margin="30dp"
+    android:id="@+id/txtTotal"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TOTAL: R$"
+        android:textColor="#000"     />
+
+
+    <TextView
+        android:id="@+id/txtCartaoUtilizado"
+        android:textSize="16dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARTÃO SENDO UTILIZADO"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:id="@+id/txtNumeroCartao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="xxxx xxxx 1234"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        style="@android:style/Widget.Button"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginRight="30dp"
+        android:background="#f7771b"
+        android:onClick="telaPagamento"
+        android:text="FINALIZAR COMANDA"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAtualizar"
+        style="@android:style/Widget.Button"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginRight="30dp"
+        android:background="#f7771b"
+        android:onClick="telaPagamento"
+        android:text="ATUALIZAR COMANDA"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+</LinearLayout>
