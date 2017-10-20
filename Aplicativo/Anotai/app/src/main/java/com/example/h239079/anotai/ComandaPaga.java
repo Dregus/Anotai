@@ -11,11 +11,19 @@ public class ComandaPaga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comanda_paga);
+
+
     }
 
     public void voltarMenu (View v)
     {
         Intent it = new Intent (this, MenuUsuario.class);
+        startActivity(it);
+    }
+
+    public void voltarMain (View v)
+    {
+        Intent it = new Intent (ComandaPaga.this, MainActivity.class);
         startActivity(it);
     }
 }

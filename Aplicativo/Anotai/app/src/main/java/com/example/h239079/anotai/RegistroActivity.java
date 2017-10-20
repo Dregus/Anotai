@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class RegistroActivity extends AppCompatActivity {
 
     private Button btnRegistrar;
-    private EditText edtNomeRegistro, edtSobrenome, edtEmailRegistro, edtCelularRegistro, edtSenha, edtNomeUsuario;
+    private EditText edtNomeRegistro, edtSobrenome, edtEmailRegistro, edtSenha, edtNomeUsuario;
 
     SQLiteDatabase db;
 
@@ -25,29 +25,8 @@ public class RegistroActivity extends AppCompatActivity {
         edtNomeRegistro = (EditText) findViewById(R.id.edtNomeRegistro);
         edtSobrenome = (EditText) findViewById(R.id.edtSobrenome);
         edtEmailRegistro = (EditText) findViewById(R.id.edtEmailRegistro);
-        edtCelularRegistro = (EditText) findViewById(R.id.edtCelularRegistro);
         edtSenha = (EditText) findViewById(R.id.edtSenha);
         edtNomeUsuario = (EditText) findViewById(R.id.edtNomeUsuario);
-
-
-        db=openOrCreateDatabase("AnotaiDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS anotai (edtSenha VARCHAR, edtNomeUsuario VARCHAR );");
-
-    }
-
-    public void onClick(View view) {
-        if (view == btnRegistrar) {
-            if (edtNomeRegistro.getText().toString().trim().length() ==0 || edtSobrenome.getText().toString().trim().length() == 0 ||
-                edtEmailRegistro.getText().toString().trim().length() ==0 || edtCelularRegistro.getText().toString().trim().length() ==0 ||
-                    edtSenha.getText().toString().trim().length() ==0 ||
-                    edtNomeUsuario.getText().toString().trim().length() ==0) {
-                showMessage("Erro!", "Preencha todos os campos");
-                return;
-            }
-            db.execSQL("INSERT INTO anotai VALUES('" + edtSenha.getText() + "','" + edtNomeUsuario.getText() + "');");
-            showMessage("Cadastro", "Cadastro feito com sucesso!");
-            clearText();
-        }
     }
 
     public void showMessage(String title,String message)

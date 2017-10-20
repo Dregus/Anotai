@@ -4,35 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientelaranja"
     tools:context="com.example.h239079.anotai.MainActivity">
 
     <EditText
         android:id="@+id/edtUsuario"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="login"
         android:inputType="textPersonName"
         android:layout_above="@+id/edtSenha"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="44dp" />
+        android:layout_marginBottom="44dp"
+        android:gravity="center"/>
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="senha"
-        android:inputType="textPersonName"
-        android:layout_centerVertical="true"
+        android:layout_height="50dp"
         android:layout_alignLeft="@+id/edtUsuario"
-        android:layout_alignStart="@+id/edtUsuario" />
+        android:layout_alignStart="@+id/edtUsuario"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="senha"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#f7771b"
+        android:background="@drawable/botao"
         android:onClick="Login"
         android:text="ENTRAR"
         android:textColor="#000"

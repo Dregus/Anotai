@@ -74,7 +74,7 @@ public class MenuUsuario extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_codigo_comanda) {
+        if (id == R.id.nav_cadastrar_comanda) {
 
             Intent it= new Intent(this, GeradoraDeComanda.class);
             startActivity(it);

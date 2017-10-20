@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.h239079.anotai.Pagamento">
+    tools:context="com.example.h239079.anotai.Pagamento"
+    android:background="@drawable/gradientelaranja">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -43,8 +44,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp"
-        android:background="#f7771b"
         android:onClick="finalizarComanda"
         android:text="PAGAR COMANDA"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:background="@drawable/botao"/>
 </RelativeLayout>

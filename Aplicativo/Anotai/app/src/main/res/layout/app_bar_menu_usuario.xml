@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.h239079.anotai.MenuUsuario">
+    tools:context="com.example.h239079.anotai.MenuUsuario"
+    android:background="@drawable/gradientelaranja">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/menuFrame">
 
-        <include layout="@layout/content_menu_usuario"/>
+        <include layout="@layout/content_menu_usuario" />
 
 
     </FrameLayout>

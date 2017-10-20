@@ -3,9 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_codigo_comanda"
+            android:id="@+id/nav_cadastrar_comanda"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Código da Comanda" />
+            android:title="Cadastrar Comanda" />
         <item
             android:id="@+id/nav_pagamento"
             android:icon="@drawable/ic_menu_manage"
