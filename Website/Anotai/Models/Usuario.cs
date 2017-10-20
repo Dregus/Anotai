@@ -14,7 +14,11 @@ namespace Anotai.Models
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string Telefone { get; set; }
+        [Display(Name = "CEP")]
+        public string Cep { get; set; }
+        [Display(Name = "Endereço")]
         public string Endereco { get; set; }
+        [Display(Name = "Número")]
         public string NumeroCasa { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }

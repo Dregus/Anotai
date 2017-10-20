@@ -19,6 +19,8 @@ namespace Anotai.Controllers
         {
             HomeViewModel hvm = new HomeViewModel();
             hvm.Noticias = db.Noticias.ToList();
+
+            getMensagem();
             return View("Gerenciar_Noticias", hvm);
         }
         
@@ -33,11 +35,14 @@ namespace Anotai.Controllers
             {
                 return HttpNotFound();
             }
+
+            getMensagem();
             return View(noticia);
         }
         
         public ActionResult Create()
         {
+            getMensagem();
             return View();
         }
         
@@ -47,11 +52,11 @@ namespace Anotai.Controllers
             using (var ctx = new AnotaiContext())
             {
                 Repositorio repositorio = new Repositorio();
-
+                
                 if (hvm.Noticia.Titulo != null && hvm.Noticia.Mensagem != null)
                 {
-                    repositorio.IncluirNoticia(hvm.Noticia);
-
+                    db.Noticias.Add(hvm.Noticia);
+                    
                     //Limpa model e tela
                     ModelState.Clear();
 
@@ -61,6 +66,8 @@ namespace Anotai.Controllers
                     //Atualiza o model e passa para a tela
                     HomeViewModel model = new HomeViewModel();
                     model.Noticias = repositorio.ListarNoticias();
+
+                    getMensagem();
 
                     //Direciona para a tela
                     return View("Gerenciar_Noticias", model);
@@ -73,6 +80,8 @@ namespace Anotai.Controllers
                     //Atualiza o model e passa para a tela
                     HomeViewModel model = new HomeViewModel();
                     model.Noticias = repositorio.ListarNoticias();
+
+                    getMensagem();
 
                     //Direciona para a tela
                     return View("Gerenciar_Noticias", model);
@@ -91,6 +100,8 @@ namespace Anotai.Controllers
             {
                 return HttpNotFound();
             }
+
+            getMensagem();
             return View("Editar_Noticias", noticia);
         }
         
@@ -103,6 +114,8 @@ namespace Anotai.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+
+            getMensagem();
             return View("Editar_Noticias", noticia);
         }
         
@@ -115,6 +128,7 @@ namespace Anotai.Controllers
             repositorio.ExcluirNoticia(id);
             model.Noticias = repositorio.ListarNoticias();
 
+            getMensagem();
             return View("Gerenciar_Noticias", model);
         }
         
@@ -124,6 +138,7 @@ namespace Anotai.Controllers
             Noticia noticia = db.Noticias.Find(id);
             db.Noticias.Remove(noticia);
             db.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -133,6 +148,7 @@ namespace Anotai.Controllers
             model.Usuarios = repositorio.ListarUsuarios();
             model.Contatos = repositorio.ListarContatos();
 
+            getMensagem();
             return View(model);
         }
 
@@ -142,14 +158,12 @@ namespace Anotai.Controllers
             HomeViewModel model = new HomeViewModel();
             model.Contatos = repositorio.ListarContatos();
 
-            model.Usuarios = db.Usuarios.Where(u =>
-                u.Nome == hvm.Usuario.Nome ||
-                u.Sobrenome == hvm.Usuario.Sobrenome ||
-                u.Telefone == hvm.Usuario.Telefone ||
-                u.Email == hvm.Usuario.Email ||
-                u.Endereco == hvm.Usuario.Endereco)
-                    .ToList();
+            if (hvm != null)
+                model.Usuarios = repositorio.PesquisarUsuario(hvm);
+            else
+                model.Usuarios = repositorio.ListarUsuarios();
 
+            getMensagem();
             return View("Relatorios", model);
         }
 
@@ -159,15 +173,23 @@ namespace Anotai.Controllers
             HomeViewModel model = new HomeViewModel();
             model.Usuarios = repositorio.ListarUsuarios();
 
-            model.Contatos = db.Contatos.Where(c =>
-                c.Nome == hvm.Contato.Nome ||
-                c.Sobrenome == hvm.Contato.Sobrenome ||
-                c.Telefone == hvm.Contato.Telefone ||
-                c.Email == hvm.Contato.Email ||
-                c.Mensagem == hvm.Contato.Mensagem)
-                    .ToList();
+            if (hvm != null)
+                model.Contatos = repositorio.PesquisarContato(hvm);
+            else
+                model.Contatos = repositorio.ListarContatos();
 
+            getMensagem();
             return View("Relatorios", model);
+        }
+
+        protected void getMensagem()
+        {
+            if (Request.Cookies.Get("usuarioLogado") != null)
+            {
+                string id = Request.Cookies.Get("usuarioLogado").Value;
+                Usuario resultado = repositorio.GetNomeUsuario(int.Parse(id));
+                ViewBag.UsuarioLogado = resultado.Nome;
+            }
         }
 
         protected override void Dispose(bool disposing)

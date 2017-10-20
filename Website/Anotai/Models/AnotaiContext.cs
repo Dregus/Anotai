@@ -8,10 +8,10 @@ namespace Anotai.Models
 {
     public class AnotaiContext : DbContext
     {
-        public AnotaiContext() : base()
+        /*public AnotaiContext() : base()
         {
 
-        }
+        }*/
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Noticia> Noticias { get; set; }

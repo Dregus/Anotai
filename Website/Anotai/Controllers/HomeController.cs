@@ -23,6 +23,9 @@ namespace Anotai.Controllers
             model.Noticias = db.ListarNoticias();
             ViewData.Clear();
 
+            // limpa usuário logado
+            HttpCookie cookie = new HttpCookie("usuarioLogado");
+
             return View(model);
         }
 
@@ -46,6 +49,14 @@ namespace Anotai.Controllers
                     hvm.Usuario.TipoUsuario = "I";
                     ctx.Usuarios.Add(hvm.Usuario);
                     ctx.SaveChanges();
+
+                    // cria cookie para utilizar usuário logado
+                    HttpCookie cookie = new HttpCookie("usuarioLogado");
+                    cookie.Path = "/";
+                    cookie.Value = hvm.Usuario.UsuarioId.ToString();
+                    cookie.Expires = DateTime.Now.AddMinutes(10d);
+                    Response.Cookies.Add(cookie);
+
                     return RedirectToAction("Investimentos", "Investidor");
                 } else
                 {
@@ -114,12 +125,24 @@ namespace Anotai.Controllers
 
                         if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "I")
                         {
-                            //FormsAuthentication.SetAuthCookie(usuarioAutenticado.UsuarioId.ToString(), false);
+                            // cria cookie para utilizar usuário logado
+                            HttpCookie cookie = new HttpCookie("usuarioLogado");
+                            cookie.Path = "/";
+                            cookie.Value = usuarioAutenticado.UsuarioId.ToString();
+                            cookie.Expires = DateTime.Now.AddMinutes(10d);
+                            Response.Cookies.Add(cookie);
+
                             return RedirectToAction("Investimentos", "Investidor");
                         }
                         else if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "A")
                         {
-                            //FormsAuthentication.SetAuthCookie(usuarioAutenticado.UsuarioId.ToString(), false);
+                            // cria cookie para utilizar usuário logado
+                            HttpCookie cookie = new HttpCookie("usuarioLogado");
+                            cookie.Path = "/";
+                            cookie.Value = usuarioAutenticado.UsuarioId.ToString();
+                            cookie.Expires = DateTime.Now.AddMinutes(10d);
+                            Response.Cookies.Add(cookie);
+
                             return RedirectToAction("Index", "Noticias");
                         }
                         else

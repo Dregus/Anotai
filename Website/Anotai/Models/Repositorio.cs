@@ -47,5 +47,34 @@ namespace Anotai.Models
         {
             return _context.Usuarios.ToList();
         }
+
+        public IEnumerable<Usuario> PesquisarUsuario(HomeViewModel hvm)
+        {
+            return _context.Usuarios.Where(u =>
+                u.Nome == hvm.Usuario.Nome ||
+                u.Sobrenome == hvm.Usuario.Sobrenome ||
+                u.Telefone == hvm.Usuario.Telefone ||
+                u.Email == hvm.Usuario.Email ||
+                u.Endereco == hvm.Usuario.Endereco)
+                .ToList();
+        }
+
+        public IEnumerable<Contato> PesquisarContato(HomeViewModel hvm)
+        {
+            return _context.Contatos.Where(c =>
+                c.Nome == hvm.Contato.Nome ||
+                c.Sobrenome == hvm.Contato.Sobrenome ||
+                c.Telefone == hvm.Contato.Telefone ||
+                c.Email == hvm.Contato.Email ||
+                c.Mensagem == hvm.Contato.Mensagem)
+                .ToList();
+        }
+
+        public Usuario GetNomeUsuario(int id)
+        {
+            return _context.Usuarios.Where(u => 
+                u.UsuarioId == id)
+                .First();
+        }
     }
 }
