@@ -34,16 +34,16 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAtualizar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginBottom="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
         android:text="TOTAL:"
         android:textColor="#000"
         android:textSize="16dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_above="@+id/btnAtualizar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/txtTotal"
@@ -54,7 +54,7 @@
         android:layout_toEndOf="@+id/textView2"
         android:layout_toRightOf="@+id/textView2"
         android:textColor="#000"
-        android:textSize="14dp" />
+        android:textSize="16dp" />
 
     <Button
         android:id="@+id/btnAtualizar"

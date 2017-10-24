@@ -40,7 +40,7 @@ import java.util.Random;
 public class MenuUsuario extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    String comandaSelecionada;
+    String comandaSelecionada, idCliente, valorFinal;
     ListView listView;
     ArrayAdapter<Comanda> adapter;
     TextView tvTotal;
@@ -52,8 +52,9 @@ public class MenuUsuario extends AppCompatActivity
 
         Bundle bundle = getIntent().getExtras();
         comandaSelecionada = bundle.getString("comanda");
+        idCliente = bundle.getString("idUsuario");
         listView = (ListView) findViewById(R.id.lvProdutos);
-        tvTotal = (TextView) findViewById(R.id.txtValorTotal);
+        tvTotal = (TextView) findViewById(R.id.txtTotal);
 
         GetComandaTask task = new GetComandaTask();
         task.execute(comandaSelecionada);
@@ -135,6 +136,9 @@ public class MenuUsuario extends AppCompatActivity
     public void telaPagamento (View v)
     {
         Intent it = new Intent (this, Pagamento.class);
+        it.putExtra("comanda", comandaSelecionada);
+        it.putExtra("idUsuario", idCliente);
+        it.putExtra("valorTotal", valorFinal);
         startActivity(it);
     }
 
@@ -210,8 +214,9 @@ public class MenuUsuario extends AppCompatActivity
 
                     Random r = new Random();
                     int value = r.nextInt(100);
+                    valorFinal = String.valueOf(value);
 
-                    tvTotal.setText(value);
+                    tvTotal.setText(valorFinal);
                 }catch (Exception e){
                     e.printStackTrace();
                 }

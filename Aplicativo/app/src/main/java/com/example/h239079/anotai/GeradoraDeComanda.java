@@ -11,11 +11,15 @@ public class GeradoraDeComanda extends AppCompatActivity {
 
     private EditText edtNumeroMesa;
     private Button btnInicarComanda;
+    String idCliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geradora_de_comanda);
+
+        Bundle bundle = getIntent().getExtras();
+        idCliente = bundle.getString("idCliente");
 
         edtNumeroMesa = (EditText) findViewById(R.id.edtNumeroMesa);
         btnInicarComanda = (Button) findViewById(R.id.btnIniciarComanda);
@@ -26,6 +30,7 @@ public class GeradoraDeComanda extends AppCompatActivity {
         String numeroComanda = edtNumeroMesa.getText().toString();
         Intent it = new Intent (this, MenuUsuario.class);
         it.putExtra("comanda", numeroComanda);
+        it.putExtra("idUsuario", idCliente);
         startActivity(it);
     }
 }

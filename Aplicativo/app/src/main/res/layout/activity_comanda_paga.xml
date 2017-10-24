@@ -31,7 +31,7 @@
         />
 
     <TextView
-        android:id="@+id/txtValorTotal"
+        android:id="@+id/label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtAviso"
@@ -44,16 +44,15 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/txtCartao"
+        android:id="@+id/tvValorFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtValorTotal"
-        android:layout_alignStart="@+id/txtValorTotal"
-        android:layout_centerVertical="true"
-        android:text="CARTÃO UTILIZADO:"
         android:textColor="#000"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:layout_alignBaseline="@+id/label1"
+        android:layout_alignBottom="@+id/label1"
+        android:layout_toRightOf="@+id/label1"
+        android:layout_toEndOf="@+id/label1" />
 
     <TextView
         android:id="@+id/txtMensagem"
@@ -63,10 +62,10 @@
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="40dp"
         android:layout_above="@+id/btnVoltarNavegacao"
-        android:layout_alignLeft="@+id/txtCartao"
-        android:layout_alignStart="@+id/txtCartao" />
+        android:layout_alignRight="@+id/txtAviso"
+        android:layout_alignEnd="@+id/txtAviso" />
 
     <Button
         android:id="@+id/btnVoltarNavegacao"
