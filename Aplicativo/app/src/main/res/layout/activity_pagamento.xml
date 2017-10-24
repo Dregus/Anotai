@@ -28,24 +28,44 @@
         android:layout_centerHorizontal="true" />
 
     <ListView
+        android:id="@+id/listViewPagamento"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/txtResumoComanda"
-        android:layout_marginTop="32dp"
-        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="100dp"/>
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtResumoComanda"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:id="@+id/btnPagar"
         style="@android:style/Widget.DeviceDefault.Button"
         android:layout_width="170dp"
         android:layout_height="38dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="18dp"
         android:onClick="finalizarComanda"
         android:text="PAGAR COMANDA"
         android:textColor="#000"
-        android:background="@drawable/botao"/>
+        android:background="@drawable/botao"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total:"
+        android:layout_above="@+id/btnPagar"
+        android:layout_alignLeft="@+id/txtResumoComanda"
+        android:layout_alignStart="@+id/txtResumoComanda"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:id="@+id/finalValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
 </RelativeLayout>

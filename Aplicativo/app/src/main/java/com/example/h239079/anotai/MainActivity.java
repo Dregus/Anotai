@@ -132,12 +132,14 @@ public class MainActivity extends AppCompatActivity {
                             if(lista.get(i).getTipoUsuario().equals("G") || lista.get(i).getTipoUsuario().equals("A")) {
                                 Intent it = new Intent(MainActivity.this, Garcom.class);
                                 int idCliente = lista.get(i).getId();
-                                it.putExtra("idCliente", String.valueOf(idCliente));
+                                String cliente = String.valueOf(idCliente);
+                                it.putExtra("idCliente", cliente);
                                 startActivity(it);
                             } else if(lista.get(i).getTipoUsuario().equals("I")) {
                                 Intent it = new Intent(MainActivity.this, GeradoraDeComanda.class);
                                 int idCliente = lista.get(i).getId();
-                                it.putExtra("idCliente", idCliente);
+                                String cliente = String.valueOf(idCliente);
+                                it.putExtra("idCliente", cliente);
                                 startActivity(it);
                             }
                         }

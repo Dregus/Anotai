@@ -31,28 +31,11 @@
         />
 
     <TextView
-        android:id="@+id/label1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtAviso"
-        android:layout_alignStart="@+id/txtAviso"
-        android:layout_below="@+id/txtAviso"
-        android:layout_marginTop="43dp"
-        android:text="VALOR PAGO:"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/tvValorFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/label1"
-        android:layout_alignBottom="@+id/label1"
-        android:layout_toRightOf="@+id/label1"
-        android:layout_toEndOf="@+id/label1" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/txtMensagem"

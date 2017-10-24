@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.h239079.anotai.model.Comanda;
@@ -29,16 +30,21 @@ public class Pagamento extends AppCompatActivity {
     String comandaSelecionada, idCliente, valorFinal;
     ListView listView;
     ArrayAdapter<Comanda> adapter;
+    TextView valor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagamento);
 
+        listView = (ListView) findViewById(R.id.listViewPagamento);
+
         Bundle bundle = getIntent().getExtras();
         comandaSelecionada = bundle.getString("comanda");
         idCliente = bundle.getString("idUsuario");
         valorFinal = bundle.getString("valorTotal");
+        valor = (TextView) findViewById(R.id.finalValorTotal);
+        valor.setText(valorFinal);
 
         GetComandaTask task = new GetComandaTask();
         task.execute(comandaSelecionada);
@@ -139,7 +145,7 @@ public class Pagamento extends AppCompatActivity {
         protected String doInBackground(String... params) {
             URL url = null;
             try {
-                url = new URL("http://10.0.2.2:65196/api/pedidofinalizado");
+                url = new URL("http://10.0.2.2:65196/api/pedidofinalizados");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("POST");
                 connection.setRequestProperty("Content-Type", "application/json");
