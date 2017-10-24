@@ -81,12 +81,24 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -198,7 +210,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InvestidorController.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
+    <Compile Include="Controllers\PacotesController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Controllers\PerfilInvestidorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,18 +224,67 @@
     <Compile Include="Migrations\201710201636299_CriaTabelas.Designer.cs">
       <DependentUpon>201710201636299_CriaTabelas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710222344416_Teste.cs" />
+    <Compile Include="Migrations\201710222344416_Teste.Designer.cs">
+      <DependentUpon>201710222344416_Teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230004539_Att.cs" />
+    <Compile Include="Migrations\201710230004539_Att.Designer.cs">
+      <DependentUpon>201710230004539_Att.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230011294_Att2.cs" />
+    <Compile Include="Migrations\201710230011294_Att2.Designer.cs">
+      <DependentUpon>201710230011294_Att2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230058541_Att3.cs" />
+    <Compile Include="Migrations\201710230058541_Att3.Designer.cs">
+      <DependentUpon>201710230058541_Att3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230200521_Att4.cs" />
+    <Compile Include="Migrations\201710230200521_Att4.Designer.cs">
+      <DependentUpon>201710230200521_Att4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230203522_Att5.cs" />
+    <Compile Include="Migrations\201710230203522_Att5.Designer.cs">
+      <DependentUpon>201710230203522_Att5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230209342_Att6.cs" />
+    <Compile Include="Migrations\201710230209342_Att6.Designer.cs">
+      <DependentUpon>201710230209342_Att6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710231700287_Att7.cs" />
+    <Compile Include="Migrations\201710231700287_Att7.Designer.cs">
+      <DependentUpon>201710231700287_Att7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710231726177_Att8.cs" />
+    <Compile Include="Migrations\201710231726177_Att8.Designer.cs">
+      <DependentUpon>201710231726177_Att8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710232338009_teste2.cs" />
+    <Compile Include="Migrations\201710232338009_teste2.Designer.cs">
+      <DependentUpon>201710232338009_teste2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AnotaiContext.cs" />
+    <Compile Include="Models\Comanda.cs" />
     <Compile Include="Models\Contato.cs" />
+    <Compile Include="Models\Investimento.cs" />
     <Compile Include="Models\Noticia.cs" />
     <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\Pacote.cs" />
+    <Compile Include="Models\RelatorioInvestidor.cs" />
+    <Compile Include="Models\RelatorioPacote.cs" />
     <Compile Include="Models\Repositorio.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\assets\css\demo.css" />
+    <Content Include="Content\assets\css\animate.min.css" />
+    <Content Include="Content\assets\css\bootstrap.min.css" />
+    <Content Include="Content\assets\css\light-bootstrap-dashboard.css" />
+    <Content Include="Content\assets\css\pe-icon-7-stroke.css" />
+    <Content Include="Content\css\demo.css" />
     <Content Include="Content\assets\fonts\Pe-icon-7-stroke.svg" />
     <Content Include="Content\assets\img\default-avatar.png" />
     <Content Include="Content\assets\img\faces\face-0.jpg" />
@@ -390,11 +453,16 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Home.cshtml" />
-    <Content Include="Views\Investidor\Meus_Investimentos.cshtml" />
+    <Content Include="Views\Investidor\Investir.cshtml" />
     <Content Include="Views\Noticias\Editar_Noticias.cshtml" />
     <Content Include="Views\Noticias\Gerenciar_Noticias.cshtml" />
     <Content Include="Views\Noticias\Relatorios.cshtml" />
     <Content Include="Views\Perfil\Perfil.cshtml" />
+    <Content Include="Views\Pacotes\Gerenciar_Pacotes.cshtml" />
+    <Content Include="Views\Pacotes\Editar_Pacotes.cshtml" />
+    <Content Include="Views\Investidor\Confirmar_Investimento.cshtml" />
+    <Content Include="Views\PerfilInvestidor\Perfil.cshtml" />
+    <Content Include="Views\Pacotes\Relatorios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -410,6 +478,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710201636299_CriaTabelas.resx">
       <DependentUpon>201710201636299_CriaTabelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710222344416_Teste.resx">
+      <DependentUpon>201710222344416_Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230004539_Att.resx">
+      <DependentUpon>201710230004539_Att.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230011294_Att2.resx">
+      <DependentUpon>201710230011294_Att2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230058541_Att3.resx">
+      <DependentUpon>201710230058541_Att3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230200521_Att4.resx">
+      <DependentUpon>201710230200521_Att4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230203522_Att5.resx">
+      <DependentUpon>201710230203522_Att5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230209342_Att6.resx">
+      <DependentUpon>201710230209342_Att6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710231700287_Att7.resx">
+      <DependentUpon>201710231700287_Att7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710231726177_Att8.resx">
+      <DependentUpon>201710231726177_Att8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710232338009_teste2.resx">
+      <DependentUpon>201710232338009_teste2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

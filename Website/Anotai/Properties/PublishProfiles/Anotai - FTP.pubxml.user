@@ -14,7 +14,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/18/2017 15:02:03</publishTime>
     </File>
     <File Include="bin/Anotai.dll">
-      <publishTime>10/20/2017 15:28:27</publishTime>
+      <publishTime>10/20/2017 16:26:34</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 08:43:40</publishTime>
@@ -160,17 +160,416 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/assets/css/demo.css">
       <publishTime>09/26/2017 12:25:56</publishTime>
     </File>
+    <File Include="Content/assets/fonts/Pe-icon-7-stroke.eot">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Pe-icon-7-stroke.svg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Pe-icon-7-stroke.ttf">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Pe-icon-7-stroke.woff">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/default-avatar.png">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-0.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-1.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-2.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-3.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-4.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-5.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-6.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/face-7.jpg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/faces/tim_vector.jpe">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/favicon.ico">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/loading-bubbles.svg">
+      <publishTime>09/26/2017 10:48:26</publishTime>
+    </File>
+    <File Include="Content/assets/img/mask.png">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/new_logo.png">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/sidebar-1.jpg">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/sidebar-2.jpg">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/sidebar-3.jpg">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/sidebar-4.jpg">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/sidebar-5.jpg">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/img/tim_80x80.png">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap-checkbox-radio-switch.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap-notify.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap-select.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap.min.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/chartist.min.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/demo.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/jquery-1.10.2.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/js/light-bootstrap-dashboard.js">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_buttons.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_cards.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_chartist.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_icons.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_inputs.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_labels.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_morphing-buttons.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_navbars.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_social-buttons.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_tabs.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_transparency.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/mixins/_vendor-prefixes.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_alerts.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_buttons.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_cards.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_chartist.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_checkbox-radio-switch.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_dropdown.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_footers.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_inputs.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_misc.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_mixins.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_navbars.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_responsive.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_sidebar-and-main-panel.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_tables.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_typography.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/lbd/_variables.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
+    <File Include="Content/assets/sass/light-bootstrap-dashboard.scss">
+      <publishTime>09/26/2017 10:48:27</publishTime>
+    </File>
     <File Include="Content/bootstrap.css">
       <publishTime>09/18/2017 15:01:14</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
       <publishTime>09/18/2017 15:01:14</publishTime>
     </File>
+    <File Include="Content/css/creative.css">
+      <publishTime>09/21/2017 20:20:58</publishTime>
+    </File>
+    <File Include="Content/css/creative.min.css">
+      <publishTime>09/21/2017 20:50:40</publishTime>
+    </File>
+    <File Include="Content/css/demo.css">
+      <publishTime>09/26/2017 12:25:56</publishTime>
+    </File>
+    <File Include="Content/img/header.jpg">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
     <File Include="Content/img/Logo_Escrita.fw.png">
       <publishTime>09/23/2017 22:02:07</publishTime>
     </File>
+    <File Include="Content/js/creative.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/js/creative.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/scss/creative.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_bootstrap-overrides.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_cta.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_global.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_masthead.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_mixins.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_navbar.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_portfolio.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_services.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
+    <File Include="Content/scss/_variables.scss">
+      <publishTime>09/18/2017 15:19:26</publishTime>
+    </File>
     <File Include="Content/Site.css">
       <publishTime>09/18/2017 15:00:59</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap-grid.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>09/21/2017 20:50:20</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>09/21/2017 20:50:29</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/css/font-awesome.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/css/font-awesome.min.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/animated.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/bordered-pulled.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/core.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/fixed-width.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/font-awesome.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/icons.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/larger.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/list.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/mixins.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/path.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/rotated-flipped.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/screen-reader.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/stacked.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/less/variables.less">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/font-awesome.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_animated.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_bordered-pulled.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_core.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_fixed-width.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_icons.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_larger.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_list.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_mixins.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_path.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_rotated-flipped.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_screen-reader.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_stacked.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/font-awesome/scss/_variables.scss">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/jquery-easing/jquery.easing.compatibility.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/jquery-easing/jquery.easing.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/jquery-easing/jquery.easing.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/jquery/jquery.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/jquery/jquery.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/magnific-popup/jquery.magnific-popup.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/magnific-popup/jquery.magnific-popup.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/magnific-popup/magnific-popup.css">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/popper/popper.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/popper/popper.min.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/scrollreveal/scrollreveal.js">
+      <publishTime>09/18/2017 15:13:19</publishTime>
+    </File>
+    <File Include="Content/vendor/scrollreveal/scrollreveal.min.js">
+      <publishTime>09/18/2017 15:13:20</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>09/21/2017 21:59:56</publishTime>
@@ -224,31 +623,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/18/2017 15:01:31</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>09/18/2017 17:52:03</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Home/Home.cshtml">
-      <publishTime>10/17/2017 09:41:35</publishTime>
+      <publishTime>10/20/2017 15:44:44</publishTime>
     </File>
     <File Include="Views/Investidor/Meus_Investimentos.cshtml">
-      <publishTime>09/26/2017 15:03:17</publishTime>
+      <publishTime>10/20/2017 15:56:27</publishTime>
     </File>
     <File Include="Views/Noticias/Editar_Noticias.cshtml">
-      <publishTime>10/17/2017 15:26:59</publishTime>
+      <publishTime>10/20/2017 15:56:53</publishTime>
     </File>
     <File Include="Views/Noticias/Gerenciar_Noticias.cshtml">
-      <publishTime>10/17/2017 15:26:54</publishTime>
+      <publishTime>10/20/2017 15:57:08</publishTime>
     </File>
     <File Include="Views/Noticias/Relatorios.cshtml">
-      <publishTime>10/17/2017 15:26:49</publishTime>
+      <publishTime>10/20/2017 15:57:21</publishTime>
     </File>
     <File Include="Views/Perfil/Perfil.cshtml">
-      <publishTime>10/17/2017 15:31:50</publishTime>
+      <publishTime>10/20/2017 15:57:35</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>10/20/2017 15:25:59</publishTime>
+      <publishTime>10/20/2017 16:30:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/20/2017 15:28:30</publishTime>
+      <publishTime>10/20/2017 16:26:38</publishTime>
     </File>
   </ItemGroup>
 </Project>

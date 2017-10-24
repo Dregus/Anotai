@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.h239079.anotai.RegistroActivity"
+    android:background="@drawable/gradientelaranja">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logoescrita"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/txtRegistrese"
+        android:layout_alignStart="@+id/txtRegistrese"
+        android:layout_marginTop="41dp" />
+
+
+    <EditText
+        android:id="@+id/txtNomeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txtSobrenomeRegistro"
+        android:layout_alignEnd="@+id/txtSobrenomeRegistro"
+        android:layout_alignLeft="@+id/txtSobrenomeRegistro"
+        android:layout_alignRight="@+id/txtSobrenomeRegistro"
+        android:layout_alignStart="@+id/txtSobrenomeRegistro"
+        android:gravity="center"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="#aba5a5" />
+
+    <EditText
+        android:id="@+id/txtSobrenomeRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName"
+        android:textColor="#aba5a5"
+        android:layout_above="@+id/txtTelefoneRegistro"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtTelefoneRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txtEmailRegistro"
+        android:layout_alignLeft="@+id/txtEmailRegistro"
+        android:layout_alignStart="@+id/txtEmailRegistro"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Telefone"
+        android:inputType="textPersonName"
+        android:textColor="#aba5a5" />
+
+    <TextView
+        android:id="@+id/txtRegistrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRE-SE!"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <EditText
+        android:id="@+id/txtSenhaRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnRegistrar"
+        android:layout_alignLeft="@+id/txtTelefoneRegistro"
+        android:layout_alignStart="@+id/txtTelefoneRegistro"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtEmailRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txtSenhaRegistro"
+        android:layout_alignLeft="@+id/txtSobrenomeRegistro"
+        android:layout_alignStart="@+id/txtSobrenomeRegistro"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao"
+        android:onClick="Registrar"
+        android:text="REGISTRAR"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+
+</RelativeLayout>

@@ -27,12 +27,23 @@ namespace Anotai.Models
             return _context.Noticias.Where(n => n.NoticiaId == codigo).First();
         }
 
+        public Pacote ListarPacote(int codigo)
+        {
+            return _context.Pacotes.Where(n => n.PacoteId == codigo).First();
+        }
+
         public void ExcluirNoticia(int codigo)
         {
             _context.Noticias.Remove(ListarNoticia(codigo));
             _context.SaveChanges();
         }
-        
+
+        public void ExcluirPacote(int codigo)
+        {
+            _context.Pacotes.Remove(ListarPacote(codigo));
+            _context.SaveChanges();
+        }
+
         public IEnumerable<Noticia> ListarNoticias()
         {
             return _context.Noticias.ToList();
@@ -67,6 +78,17 @@ namespace Anotai.Models
                 c.Telefone == hvm.Contato.Telefone ||
                 c.Email == hvm.Contato.Email ||
                 c.Mensagem == hvm.Contato.Mensagem)
+                .ToList();
+        }
+
+        public IEnumerable<Pacote> PesquisarPacote(HomeViewModel hvm)
+        {
+            return _context.Pacotes.Where(c =>
+                c.Titulo == hvm.Pacote.Titulo ||
+                c.Descricao == hvm.Pacote.Descricao ||
+                c.Preco == hvm.Pacote.Preco ||
+                c.QtdTotal == hvm.Pacote.QtdTotal ||
+                c.QtdDisponivel == hvm.Pacote.QtdDisponivel)
                 .ToList();
         }
 

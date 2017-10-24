@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.h239079.anotai.Garcom"
+    android:background="@drawable/gradientelaranja">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoescrita"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/txtBebidas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:text="BEBIDAS"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnBebida"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtBebidas"
+        android:dropDownWidth="match_parent" />
+
+    <TextView
+        android:id="@+id/txtPratos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="ALIMENTOS"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/spnBebida"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spnAlimento"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtPratos"/>
+
+    <TextView
+        android:id="@+id/txtSobremesa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:layout_below="@+id/spnAlimento"
+        android:layout_centerHorizontal="true"
+        android:text="SOBREMESAS"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnSobremesa"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/txtSobremesa"/>
+
+    <EditText
+        android:id="@+id/txtNumeroComanda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="Comanda Destino"
+        android:inputType="number"
+        android:layout_above="@+id/txtSenhaRegistro"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnInserirProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/txtSobremesa"
+        android:layout_alignLeft="@+id/txtSobremesa"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtSobremesa"
+        android:layout_alignStart="@+id/txtSobremesa"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/botao"
+        android:onClick="escolherMesa"
+        android:text="INSERIR NA COMANDA" />
+
+</LinearLayout>

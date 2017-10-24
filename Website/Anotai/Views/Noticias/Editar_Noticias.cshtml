@@ -17,7 +17,7 @@
     <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" />
     <link href="~/Content/assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
-    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="~/Content/demo.css" rel="stylesheet" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="~/Content/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
@@ -44,6 +44,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="@Url.Action("Index", "Pacotes")">
+                            <i class="pe-7s-tools"></i>
+                            <p>Gerenciar Pacotes</p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="@Url.Action("Edit", "Perfil")">
                             <i class="pe-7s-user"></i>
                             <p>Meu Perfil</p>
@@ -52,7 +58,13 @@
                     <li>
                         <a href="@Url.Action("Relatorios", "Noticias")">
                             <i class="pe-7s-graph"></i>
-                            <p>Relatórios</p>
+                            <p>Relatórios de Usuários</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Relatorios", "Pacotes")">
+                            <i class="pe-7s-graph"></i>
+                            <p>Relatórios de Invest.</p>
                         </a>
                     </li>
                     <li>

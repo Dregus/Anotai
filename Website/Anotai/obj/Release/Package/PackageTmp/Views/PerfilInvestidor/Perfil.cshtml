@@ -1,0 +1,216 @@
+﻿@model Anotai.Models.Usuario
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Anotaí - Administrador</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <link href="~/Content/css/demo.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="~/Content/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-color="orange">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a class="simple-text"><img src="~/Content/img/Logo_Escrita.fw.png"></a>
+                </div>
+
+                <ul class="nav">
+                    <li class="text-center">
+                        Bem vindo, @ViewBag.UsuarioLogado
+                    </li>
+                    <li class="text-center">
+                        &nbsp;
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Investidor")">
+                            <i class="pe-7s-wallet"></i>
+                            <p>Investir</p>
+                        </a>
+                    </li >
+                    <li class="active">
+                        <a href="@Url.Action("Edit", "PerfilInvestidor")">
+                            <i class="pe-7s-user"></i>
+                            <p>Meu Perfil</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Home", "Home")">
+                            <i class="pe-7s-left-arrow"></i>
+                            <p>Sair</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Meu Perfil</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @if (ViewBag.Atualizado == "Sim")
+                            {
+                                <div class="alert alert-success">
+                                    <a href="#" class="close" data-dismiss="alert">×</a>
+                                    <strong>Sucesso!</strong> Seu perfil foi atualizado com sucesso.
+                                </div>
+                            }
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Editar Perfil</h4>
+                                    <p class="category">Atualize suas informações pessoais e esteja com o cadastro sempre em dia</p>
+                                </div>
+                                <div class="content table-responsive table-full-width" style="margin:0px">
+                                    @using (Html.BeginForm("Edit", "PerfilInvestidor"))
+                                    {
+                                        @Html.AntiForgeryToken()
+
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                        @Html.HiddenFor(model => model.UsuarioId)
+                                        @Html.HiddenFor(model => model.TipoUsuario)
+                                        @Html.HiddenFor(model => model.Senha)
+
+                                        <div class="row">
+                                            <div class="form-group col-md-3 col-lg-3">
+                                                @Html.LabelFor(model => model.Nome)
+                                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="form-group col-md-3 col-lg-3">
+                                                @Html.LabelFor(model => model.Sobrenome)
+                                                @Html.EditorFor(model => model.Sobrenome, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Sobrenome, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-md-2 col-lg-2">
+                                                @Html.LabelFor(model => model.Telefone)
+                                                @Html.EditorFor(model => model.Telefone, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Telefone, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="form-group col-md-3 col-lg-3">
+                                                @Html.LabelFor(model => model.Email)
+                                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-md-2 col-lg-2">
+                                                @Html.LabelFor(model => model.Cep)
+                                                @Html.EditorFor(model => model.Cep, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Cep, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="form-group col-md-3 col-lg-3">
+                                                @Html.LabelFor(model => model.Endereco)
+                                                @Html.EditorFor(model => model.Endereco, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Endereco, "", new { @class = "text-danger" })
+                                            </div>
+
+                                            <div class="form-group col-md-1 col-lg-1">
+                                                @Html.LabelFor(model => model.NumeroCasa)
+                                                @Html.EditorFor(model => model.NumeroCasa, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.NumeroCasa, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="submit" value="Salvar" class="btn btn-light" />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Como Funciona
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Baixe o App
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script> <a href="#">Anotai</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="~/Content/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="~/Content/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="~/Content/assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+<!--  Charts Plugin -->
+<script src="~/Content/assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="~/Content/assets/js/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="~/Content/assets/js/light-bootstrap-dashboard.js"></script>
+
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+<script src="~/Content/assets/js/demo.js"></script>
+
+
+</html>

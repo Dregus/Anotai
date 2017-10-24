@@ -2,14 +2,9 @@
 <parameters>
   <parameter name="AnotaiContext-Web.config Connection String" description="AnotaiContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:anotai.database.windows.net,1433;Initial Catalog=AnotaiDB;Persist Security Info=False;User ID={dregus};Password={@@Cofmx031097};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Views\\Web\.config$" match="/configuration/connectionStrings/add[@name='AnotaiContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AnotaiContext']/@connectionString" />
   </parameter>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-Anotai-20170918030148.mdf;Initial Catalog=aspnet-Anotai-20170918030148;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="Anotai.Models.AnotaiContext-Web.config Connection String" description="Anotai.Models.AnotaiContext Connection String used in web.config by the application to access the database." defaultValue="Anotai.Models.AnotaiContext_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Anotai.Models.AnotaiContext']/@connectionString" />
-  </parameter>
-  <parameter name="Anotai.Models.AnotaiContext_DatabasePublish-Web.config Connection String" description="Anotai.Models.AnotaiContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="Anotai.Models.AnotaiContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Anotai.Models.AnotaiContext_DatabasePublish']/@connectionString" />
+  <parameter name="AnotaiContext_DatabasePublish-Web.config Connection String" description="AnotaiContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="AnotaiContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\aleite\\Anotai\\Website\\Anotai\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AnotaiContext_DatabasePublish']/@connectionString" />
   </parameter>
 </parameters>

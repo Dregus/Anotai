@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.h239079.anotai.GeradoraDeComanda"
+    android:background="@drawable/gradientelaranja">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logoescrita"
+        android:id="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/txtNumeroMesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSIRA O NÚMERO DA MESA"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/edtNumeroMesa"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edtNumeroMesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/btnIniciarComanda"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnIniciarComanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtNumeroMesa"
+        android:layout_alignLeft="@+id/edtNumeroMesa"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edtNumeroMesa"
+        android:layout_alignStart="@+id/edtNumeroMesa"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/botao"
+        android:onClick="voltarPedido"
+        android:text="FAZER PEDIDO" />
+
+
+</RelativeLayout>

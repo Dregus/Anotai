@@ -8,13 +8,12 @@ namespace Anotai.Models
 {
     public class AnotaiContext : DbContext
     {
-        /*public AnotaiContext() : base()
-        {
-
-        }*/
-
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Noticia> Noticias { get; set; }
         public DbSet<Contato> Contatos { get; set; }
+        public DbSet<Pacote> Pacotes { get; set; }
+        public DbSet<Investimento> Investimentos { get; set; }
+        public DbSet<RelatorioInvestidor> RelatorioInvestidores { get; set; }
+        public DbSet<RelatorioPacote> RelatorioPacotes { get; set; }
     }
 }

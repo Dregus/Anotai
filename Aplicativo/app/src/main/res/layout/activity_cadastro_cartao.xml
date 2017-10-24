@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/gradientelaranja"
+tools:context="com.example.h239079.anotai.CadastroCartao">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logoescrita"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/txtCadastroCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CADASTRE SEU CARTÃO"
+        android:textColor="#000"
+        android:textSize="@dimen/nav_header_vertical_spacing"
+        android:textStyle="bold"
+        android:layout_above="@+id/edtNumeroCartao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+    <EditText
+        android:id="@+id/edtNumeroCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="número do cartão"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:layout_above="@+id/edtValidade"
+        android:layout_alignLeft="@+id/edtValidade"
+        android:layout_alignStart="@+id/edtValidade" />
+
+    <EditText
+        android:id="@+id/edtValidade"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="data de validade"
+        android:inputType="textPersonName|number"
+        android:gravity="center"
+        android:layout_above="@+id/edtCvv"
+        android:layout_alignLeft="@+id/edtCvv"
+        android:layout_alignStart="@+id/edtCvv" />
+
+    <EditText
+        android:id="@+id/edtCvv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="cvv"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edtTelefone"
+        android:layout_alignStart="@+id/edtTelefone" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtValidade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="nome do titular"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCadastrarCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/botao"
+        android:text="CADASTRAR CARTÃO"
+        android:textColor="#000"
+        android:layout_below="@+id/edtTelefone"
+        android:layout_alignRight="@+id/txtCadastroCartao"
+        android:layout_alignEnd="@+id/txtCadastroCartao"
+        android:layout_alignLeft="@+id/txtCadastroCartao"
+        android:layout_alignStart="@+id/txtCadastroCartao" />
+
+</RelativeLayout>

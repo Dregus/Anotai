@@ -10,6 +10,7 @@ namespace Anotai.Controllers
     public class HomeController : Controller
     {
         private Repositorio db = new Repositorio();
+        private AnotaiContext context = new AnotaiContext();
 
         // GET: Index
         public ActionResult Index()
@@ -21,6 +22,7 @@ namespace Anotai.Controllers
         {
             HomeViewModel model = new HomeViewModel();
             model.Noticias = db.ListarNoticias();
+            model.Pacotes = context.Pacotes.ToList();
             ViewData.Clear();
 
             // limpa usuário logado
@@ -32,7 +34,7 @@ namespace Anotai.Controllers
         [HttpPost]
         public ActionResult Home(Usuario u)
         {
-            return RedirectToAction("Investimentos", "Investidor");
+            return RedirectToAction("Index", "Investidor");
         }
 
         [HttpPost]
@@ -57,7 +59,7 @@ namespace Anotai.Controllers
                     cookie.Expires = DateTime.Now.AddMinutes(10d);
                     Response.Cookies.Add(cookie);
 
-                    return RedirectToAction("Investimentos", "Investidor");
+                    return RedirectToAction("Index", "Investidor");
                 } else
                 {
                     ViewBag.CadastrarErro = "Por favor, preencha todos os campos e tente novamente.";
@@ -132,7 +134,7 @@ namespace Anotai.Controllers
                             cookie.Expires = DateTime.Now.AddMinutes(10d);
                             Response.Cookies.Add(cookie);
 
-                            return RedirectToAction("Investimentos", "Investidor");
+                            return RedirectToAction("Index", "Investidor");
                         }
                         else if (usuarioAutenticado != null && usuarioAutenticado.TipoUsuario == "A")
                         {

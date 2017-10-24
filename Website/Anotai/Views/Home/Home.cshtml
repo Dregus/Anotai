@@ -260,6 +260,52 @@
             </div>
         </div>
     </section>
+    <section class="bg-primary text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @for (var i = 0; i < Model.Pacotes.Count(); i++)
+                {
+                    if (i == 0)
+                    {
+                        <div class="carousel-item active">
+                            @Model.Pacotes.ElementAt(i).Titulo
+                            <br />
+                            @Model.Pacotes.ElementAt(i).Descricao
+                            <br />
+                            @Model.Pacotes.ElementAt(i).Preco
+                            <br />
+                            @Model.Pacotes.ElementAt(i).QtdTotal
+                            <br />
+                            @Model.Pacotes.ElementAt(i).QtdDisponivel
+                        </div>
+                    }
+                    else
+                    {
+                        <div align-content:center" class="carousel-item">
+                            @Model.Pacotes.ElementAt(i).Titulo
+                            <br />
+                            @Model.Pacotes.ElementAt(i).Descricao
+                            <br />
+                            @Model.Pacotes.ElementAt(i).Preco
+                            <br />
+                            @Model.Pacotes.ElementAt(i).QtdTotal
+                            <br />
+                            @Model.Pacotes.ElementAt(i).QtdDisponivel
+                        </div>
+                    }
+                }
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
     <section class="bg-dark text-center">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
